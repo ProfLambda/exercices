@@ -1,0 +1,20 @@
+NOTE DE SERVICE
+À l'attention de : Tout le personnel de l'accueil
+Date : 20 Mars 2026
+Objet : Nouveaux plannings de permanence
+
+L'équipe de direction vous annonce la mise en place d'un nouveau roulement pour les permanences à l'accueil du Centre Médical, en vigueur dès lundi prochain.
+
+Merci de respecter les consignes suivantes :
+Arriver à l'accueil au moins 10 minutes avant le début de votre permanence.
+Vérifier l'état de la salle d'attente à la fin de votre service.
+Passer le relais au collègue suivant en lui indiquant les urgences en cours.
+
+Le planning hebdomadaire est réparti comme suit :
+
+[INSÉRER LE TABLEAU ICI]
+
+Données à intégrer dans le tableau :
+Lundi : Matin (Alice), Après-midi (Marc)
+Mardi : Matin (Sophie), Après-midi (Alice)
+Mercredi : Matin (Marc), Après-midi (Sophie)

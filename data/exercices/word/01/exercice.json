@@ -1,0 +1,34 @@
+{
+    "id": "word_01",
+    "title": "Création d'une lettre formelle",
+    "software": "word",
+    "difficulty": "Débutant",
+    "estimatedTime": "15 min",
+    "description": "Mise en forme d'un courrier administratif type (expéditeur, destinataire, objet, signature).",
+    "context": "Le cabinet médical doit envoyer une lettre de rappel de paiement à un patient.\n\nVous disposez du texte brut de la lettre dans les fichiers ressources. Votre objectif est de la mettre en forme en respectant les standards de présentation d'une lettre administrative classique.",
+    "tasks": [
+        "Télécharger et ouvrir le fichier texte_brut_lettre.txt dans Microsoft Word.",
+        "Placer les coordonnées de l'expéditeur (le Cabinet) en haut à gauche.",
+        "Placer les coordonnées du destinataire (le Patient) plus bas, alignées à droite (via un retrait gauche ou une tabulation).",
+        "Mettre la mention 'Objet : Rappel de facture...' en gras et souligné.",
+        "Justifier le corps du texte (aligné à gauche et à droite).",
+        "Aligner la mention 'La Direction' et la signature à droite, en bas du document.",
+        "Ajuster les espacements et les marges pour que la lettre tienne sur une seule page et soit esthétique."
+    ],
+    "resources": [
+        {
+            "name": "Texte brut de la lettre (TXT)",
+            "file": "texte_brut_lettre.txt"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Aligner ou justifier du texte dans Word",
+            "url": "https://support.microsoft.com/fr-fr/office/aligner-ou-justifier-du-texte-b9098b0a-31a8-444a-a0a1-435ed4bf3b2f"
+        },
+        {
+            "name": "Définir des taquets de tabulation",
+            "url": "https://support.microsoft.com/fr-fr/office/d%C3%A9finir-effacer-ou-supprimer-des-taquets-de-tabulation-06969e0f-2c81-4fe0-8df5-88f18087a8e0"
+        }
+    ]
+}

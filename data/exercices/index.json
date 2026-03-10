@@ -71,6 +71,38 @@
             "difficulty": "Intermédiaire",
             "estimatedTime": "15 min",
             "description": "Compléter un tableau pour calculer l'ancienneté de chaque agent avec DATEDIF."
+        },
+        {
+            "id": "word_01",
+            "title": "Création d'une lettre formelle",
+            "software": "word",
+            "difficulty": "Débutant",
+            "estimatedTime": "15 min",
+            "description": "Mise en forme d'un courrier administratif type (expéditeur, destinataire, objet, signature)."
+        },
+        {
+            "id": "word_02",
+            "title": "Création d'une note de service avec tableau",
+            "software": "word",
+            "difficulty": "Intermédiaire",
+            "estimatedTime": "20 min",
+            "description": "Création d'un document interne intégrant des listes à puces et un tableau de planning."
+        },
+        {
+            "id": "word_03",
+            "title": "Publipostage : Invitation pour une campagne de prévention",
+            "software": "word",
+            "difficulty": "Avancé",
+            "estimatedTime": "30 min",
+            "description": "Utiliser l'outil de fusion et publipostage (Mailing) de Word en liant un fichier CSV à une lettre type."
+        },
+        {
+            "id": "word_04",
+            "title": "Mise en page d'un rapport long",
+            "software": "word",
+            "difficulty": "Avancé",
+            "estimatedTime": "45 min",
+            "description": "Structurer un document de plusieurs pages : styles de titres, sommaire automatique et pagination."
         }
     ]
 }

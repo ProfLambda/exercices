@@ -1,0 +1,38 @@
+{
+    "id": "word_04",
+    "title": "Mise en page d'un rapport long",
+    "software": "word",
+    "difficulty": "Avancé",
+    "estimatedTime": "45 min",
+    "description": "Apprenez à structurer un document de plusieurs pages : styles de titres, sommaire automatique et pagination.",
+    "context": "À la fin de l'année, le chef de service vous demande de mettre en forme le rapport d'activité annuel des urgences, actuellement sous forme de texte brut brouillon.\n\nCe document étant destiné à la direction générale, il doit être parfaitement structuré avec une belle présentation professionnelle et les outils d'automatisation de Word.",
+    "tasks": [
+        "Ouvrir texte_brut_rapport.txt dans Word et l'enregistrer au format .docx.",
+        "Créer une page de garde claire avec le grand titre 'RAPPORT D'ACTIVITÉ ANNUEL 2026', l'auteur, et la date.",
+        "Appliquer le style 'Titre 1' aux grands chapitres (INTRODUCTION, ANALYSE DES FLUX, TEMPS DE PRISE EN CHARGE, CONCLUSIONS).",
+        "Insérer un saut de page avant chaque Titre 1 pour que chaque partie commence sur une nouvelle page.",
+        "Insérer un 'Sommaire (Table des matières)' automatique juste après la page de garde.",
+        "Ajouter des numéros de page en bas, alignés à droite.",
+        "Modifier la police et la couleur du Style 'Titre 1' pour qu'il soit bleu foncé et en taille 18."
+    ],
+    "resources": [
+        {
+            "name": "Brouillon du rapport (TXT)",
+            "file": "texte_brut_rapport.txt"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Utiliser les styles prédéfinis",
+            "url": "https://support.microsoft.com/fr-fr/office/appliquer-un-style-f8b12204-dc2e-40ec-8bb1-ec20516fc4bb"
+        },
+        {
+            "name": "Insérer une table des matières automatique",
+            "url": "https://support.microsoft.com/fr-fr/office/ins%C3%A9rer-une-table-des-mati%C3%A8res-882e8564-0edb-435e-84b5-1d8552cb7a48"
+        },
+        {
+            "name": "Ajouter des numéros de page",
+            "url": "https://support.microsoft.com/fr-fr/office/ins%C3%A9rer-les-num%C3%A9ros-de-page-9f366518-0500-4b45-903d-987d3827c007"
+        }
+    ]
+}

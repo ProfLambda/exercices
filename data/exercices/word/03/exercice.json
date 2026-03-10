@@ -1,0 +1,34 @@
+{
+    "id": "word_03",
+    "title": "Publipostage : Invitation pour une campagne de prévention",
+    "software": "word",
+    "difficulty": "Avancé",
+    "estimatedTime": "30 min",
+    "description": "Utiliser l'outil de fusion et publipostage (Mailing) de Word en liant un fichier Excel (CSV) à une lettre type.",
+    "context": "La clinique organise une grande journée de prévention et souhaite convier plusieurs de ses patients réguliers.\n\nVous êtes chargé(e) de générer les courriers nominatifs. Pour gagner du temps, vous devez utiliser la fonction de publipostage pour associer la lettre type (Word) à la base de données de patients (Excel/CSV).",
+    "tasks": [
+        "Ouvrir lettre_invitation.txt dans Word et l'enregistrer au format .docx.",
+        "Mettre en forme rapidement la lettre (expéditeur Clinique en haut, date du jour).",
+        "Aller dans l'onglet 'Publipostage' et démarrer la fusion (Lettres).",
+        "Sélectionner les destinataires en utilisant le fichier existant patients.csv.",
+        "Insérer un 'Bloc d'adresse' en haut à droite pour afficher : Civilite, Nom, Prenom, Adresse, CodePostal et Ville.",
+        "Remplacer les 'Madame, Monsieur,' du corps de la lettre par la formule d'appel dynamique (ex: Cher Monsieur Dupont,).",
+        "Terminer et fusionner pour générer le document de résultat contenant les 5 lettres distinctes personnalisées."
+    ],
+    "resources": [
+        {
+            "name": "Lettre type (TXT)",
+            "file": "lettre_invitation.txt"
+        },
+        {
+            "name": "Base de données Patients (CSV)",
+            "file": "patients.csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Utiliser le publipostage pour créer des lettres",
+            "url": "https://support.microsoft.com/fr-fr/office/utiliser-le-publipostage-d8704229-26c8-4770-aeac-53a51f05adbc"
+        }
+    ]
+}

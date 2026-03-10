@@ -1,0 +1,35 @@
+{
+    "id": "word_02",
+    "title": "Création d'une note de service avec tableau",
+    "software": "word",
+    "difficulty": "Intermédiaire",
+    "estimatedTime": "20 min",
+    "description": "Création d'un document interne intégrant des listes à puces et un tableau de planning.",
+    "context": "Vous devez rédiger une note d'information destinée à tout le personnel concernant le nouveau planning de permanences de l'accueil.\n\nVous devrez insérer le texte, créer des listes à puces pour que ce soit lisible, et concevoir un tableau clair pour présenter les horaires.",
+    "tasks": [
+        "Télécharger et ouvrir le fichier texte_brut_note.txt dans Word.",
+        "Centrer, mettre en taille 16, en gras et encadrer le titre 'NOTE DE SERVICE'.",
+        "Transformer la liste des trois consignes en une liste à puces personnalisée.",
+        "Insérer un tableau de 3 colonnes et 4 lignes sous le texte.",
+        "Remplir les en-têtes du tableau : 'Jour', 'Matin (8h-12h)', 'Après-midi (13h-17h)'.",
+        "Mettre l'en-tête du tableau en gras, avec un fond gris ou coloré (trame de fond).",
+        "Remplir le reste du tableau avec les données fournies à la fin du fichier texte.",
+        "Ajuster la largeur des colonnes pour que le tableau soit bien proportionné."
+    ],
+    "resources": [
+        {
+            "name": "Brouillon de la note (TXT)",
+            "file": "texte_brut_note.txt"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Insérer un tableau",
+            "url": "https://support.microsoft.com/fr-fr/office/ins%C3%A9rer-un-tableau-a11200bc-c0a7-4b77-a859-994191c944eb"
+        },
+        {
+            "name": "Créer une liste à puces",
+            "url": "https://support.microsoft.com/fr-fr/office/cr%C3%A9er-une-liste-%C3%A0-puces-ou-num%C3%A9rot%C3%A9e-97180742-fee8-494b-97e3-0c46b1bc30df"
+        }
+    ]
+}
