@@ -1,0 +1,34 @@
+{
+    "title": "Suivi des impayés et relances patients",
+    "software": "excel",
+    "difficulty": "Intermédiaire",
+    "estimatedTime": "20 min",
+    "context": "Vous êtes en charge du suivi comptable du cabinet. Vous devez identifier les factures de consultations qui n'ont pas encore été réglées de plus de 30 jours, afin de procéder à l'envoi des courriers de relance.",
+    "tasks": [
+        "Dans une nouvelle colonne, calculez le nombre de jours écoulés depuis l'émission de la facture en utilisant la fonction AUJOURDHUI().",
+        "Ajoutez une colonne 'Statut Relance'. Utilisez une fonction SI imbriquée pour afficher 'Relance 2' si le retard dépasse 60 jours, 'Relance 1' s'il dépasse 30 jours, et 'À jour' sinon.",
+        "Triez l'ensemble de votre tableau du retard le plus important au plus faible.",
+        "Filtrez le tableau pour ne faire apparaître uniquement que les patients avec le statut 'Relance 1' ou 'Relance 2'."
+    ],
+    "expectedResult": {
+        "description": "Un tableau affichant les factures filtrées sur les retards, où les plus anciens dus apparaissent en premier avec leur niveau de relance clairement défini.",
+        "image": "facultatif.png"
+    },
+    "resources": [
+        {
+            "name": "Liste des factures (CSV)",
+            "file": "exercices_5_factures.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Calculer l'écart entre deux dates",
+            "url": "https://support.microsoft.com/fr-fr/office/calculer-le-nombre-de-jours-entre-deux-dates-51dcbd86-9ac5-4422-9226-778847b2c019"
+        },
+        {
+            "name": "La fonction SI() avancée",
+            "url": "https://support.microsoft.com/fr-fr/office/fonction-si-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2"
+        }
+    ]
+}

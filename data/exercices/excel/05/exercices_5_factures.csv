@@ -1,0 +1,8 @@
+Num Facture;Patient;Date Emission;Montant HT;Montant TTC;Reglee
+FAC-2026-001;Jean Dupont;01/02/2026;45.00;54.00;Non
+FAC-2026-002;Marie Curie;15/02/2026;25.00;30.00;Non
+FAC-2026-003;Albert Einstein;28/02/2026;75.00;90.00;Oui
+FAC-2026-004;Isaac Newton;10/03/2026;30.00;36.00;Non
+FAC-2026-005;Galileo Galilei;05/01/2026;40.00;48.00;Non
+FAC-2026-006;Ada Lovelace;20/04/2026;25.00;30.00;Non
+FAC-2026-007;Nikola Tesla;12/12/2025;120.00;144.00;Non

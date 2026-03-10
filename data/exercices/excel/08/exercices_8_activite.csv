@@ -1,0 +1,16 @@
+Num;Date;Medecin;Specialite;Type Acte;Tarif
+001;01/05/2026;Dr. Durand;Generaliste;Consultation;25
+002;01/05/2026;Dr. Martin;Generaliste;Visite a domicile;35
+003;01/05/2026;Dr. Lemaire;Cardiologue;ECG;45
+004;02/05/2026;Dr. Durand;Generaliste;Certificat;25
+005;02/05/2026;Dr. Lemaire;Cardiologue;Suivi;35
+006;03/05/2026;Dr. Petit;Ophtalmologue;Fond oeil;55
+007;03/05/2026;Dr. Durand;Generaliste;Consultation;25
+008;04/05/2026;Dr. Martin;Generaliste;Consultation;25
+009;04/05/2026;Dr. Petit;Ophtalmologue;Prescription lunettes;40
+010;05/05/2026;Dr. Lemaire;Cardiologue;ECG;45
+011;05/05/2026;Dr. Petit;Ophtalmologue;Fond oeil;55
+012;05/05/2026;Dr. Durand;Generaliste;Visite a domicile;35
+013;06/05/2026;Dr. Martin;Generaliste;Consultation;25
+014;07/05/2026;Dr. Lemaire;Cardiologue;Echographie;80
+015;08/05/2026;Dr. Petit;Ophtalmologue;Prescription lunettes;40

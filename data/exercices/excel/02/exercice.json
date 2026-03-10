@@ -1,0 +1,44 @@
+{
+    "id": "excel_02",
+    "title": "Gestion des stocks de matériel médical",
+    "software": "excel",
+    "difficulty": "Intermédiaire",
+    "estimatedTime": "20 min",
+    "context": "Le cabinet médical doit s'assurer qu'il ne manque jamais de matériel (seringues, pansements, gants, etc.).\nVous êtes chargé(e) de mettre à jour le tableau de suivi des stocks et de repérer les articles à recommander en urgence.",
+    "tasks": [
+        "Utiliser la fonction RECHERCHEV pour afficher le nom du fournisseur de chaque article à partir du code fournisseur.",
+        "Calculer la valeur totale du stock (Quantité restante * Prix unitaire) pour chaque ligne.",
+        "Utiliser la fonction SI pour afficher 'À commander' si la quantité restante est inférieure au seuil d'alerte, sinon 'Stock OK'.",
+        "Compter le nombre total d'articles à commander à l'aide de la fonction NB.SI."
+    ],
+    "expectedResult": {
+        "description": "Un tableau de suivi des stocks avec des alertes visuelles claires sur les articles en rupture, et la valeur totale du stock.",
+        "image": ""
+    },
+    "resources": [
+        {
+            "name": "Inventaire du matériel (CSV)",
+            "file": "exercices_2_inventaire.csv",
+            "type": "csv"
+        },
+        {
+            "name": "Liste des fournisseurs (CSV)",
+            "file": "exercices_2_fournisseurs.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Fonction RECHERCHEV (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/recherchev-fonction-recherchev-0bbc8083-26fe-4963-8ab8-93a18ad188a1"
+        },
+        {
+            "name": "Utiliser la fonction SI (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/fonction-si-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2"
+        },
+        {
+            "name": "Fonction NB.SI (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/nb-si-fonction-nb-si-e0de10c6-f885-4e71-abb4-1f464816df34"
+        }
+    ]
+}

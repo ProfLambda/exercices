@@ -1,0 +1,35 @@
+{
+    "title": "Tableau de bord mensuel de l'activité",
+    "software": "excel",
+    "difficulty": "Avancé",
+    "estimatedTime": "30 min",
+    "context": "Lors de la réunion administrative mensuelle du pôle médical, vous êtes en charge de présenter le bilan financier et l'activité du mois écoulé. Vous disposez d'un extrait de base de données volumineux contenant chaque acte médical.",
+    "tasks": [
+        "Sélectionnez vos données et insérez un Tableau Croisé Dynamique (TCD) sur une nouvelle feuille.",
+        "Construisez le premier TCD pour afficher le nombre de consultations de ce mois-ci : placez le 'Médecin' en Colonnes, le 'Type Acte' en Lignes, et ajoutez 'Num Consultation' en Valeurs (utilisez la fonction Nombre).",
+        "Copiez-Collez ce premier TCD pour en créer un deuxième juste à côté. Modifiez ce dernier pour analyser le Chiffre d'Affaires : placez 'Tarif' dans la zone Valeurs et paramétrez-le sur la fonction Somme (avec format Monétaire).",
+        "Insérez un Graphique Croisé Dynamique en Secteurs (Camembert) relié à ce deuxième TCD pour visualiser la part de chiffre d'affaires générée par type de spécialité.",
+        "Pour rendre votre tableau de bord interactif, ajoutez un Segment sur le champ 'Date' (ou 'Jour de la semaine' si vous le désirez) pour filtrer les deux TCD en même temps (Connexions de rapports)."
+    ],
+    "expectedResult": {
+        "description": "Un espace complet comprenant deux TCD (volume d'actes et CA), accompagné d'un graphique en secteurs et de segments cliquables.",
+        "image": "facultatif.png"
+    },
+    "resources": [
+        {
+            "name": "Extraction d'activité (CSV)",
+            "file": "exercices_8_activite.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Créer un Tableau Croisé Dynamique",
+            "url": "https://support.microsoft.com/fr-fr/office/cr%C3%A9er-un-tableau-crois%C3%A9-dynamique-pour-analyser-des-donn%C3%A9es-de-feuille-de-calcul-a9a84538-bfe9-40a9-a8e9-f99134456576"
+        },
+        {
+            "name": "Utiliser des segments pour filtrer",
+            "url": "https://support.microsoft.com/fr-fr/office/utiliser-des-segments-pour-filtrer-vos-donn%C3%A9es-249f966b-a9d5-4b0f-b31a-12651785d29d"
+        }
+    ]
+}

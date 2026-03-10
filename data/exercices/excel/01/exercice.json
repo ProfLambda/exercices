@@ -1,0 +1,39 @@
+{
+    "id": "excel_01",
+    "title": "Bilan hebdomadaire des consultations",
+    "software": "excel",
+    "difficulty": "Débutant",
+    "estimatedTime": "15 min",
+    "context": "Vous travaillez dans un cabinet de santé regroupant plusieurs médecins (Généralistes, Dentistes, Kinésithérapeutes...).\nÀ la fin de la semaine, vous devez faire le bilan du nombre de consultations réalisées.\nL'objectif est d'avoir une vue globale de l'activité du cabinet sur les différents jours de la semaine.",
+    "tasks": [
+        "Calculer le total des consultations par spécialité sur l'ensemble de la semaine avec la fonction SOMME.",
+        "Calculer la moyenne quotidienne de consultations du cabinet avec la fonction MOYENNE.",
+        "Repérer la journée la plus chargée et la journée la plus calme en utilisant respectivement MAX et MIN.",
+        "Afficher 'Objectif atteint' si le total général des consultations dépasse 150, sinon afficher 'À améliorer' en utilisant la fonction SI."
+    ],
+    "expectedResult": {
+        "description": "Un tableau complété avec les totaux, moyennes et records de la semaine clairement identifiables.",
+        "image": "exercice_1.png"
+    },
+    "resources": [
+        {
+            "name": "Données brutes de la semaine (CSV)",
+            "file": "exercices_1.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Fonction SOMME (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/somme-fonction-somme-043e1c7d-7726-4e80-8f32-07b23e057f89"
+        },
+        {
+            "name": "Fonction MOYENNE (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/moyenne-moyenne-fonction-047bac88-d466-426c-a32b-8f33eb960cf6"
+        },
+        {
+            "name": "Utiliser la fonction SI (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/fonction-si-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2"
+        }
+    ]
+}

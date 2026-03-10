@@ -1,0 +1,40 @@
+{
+    "id": "excel_03",
+    "title": "Facturation des patients professionnels",
+    "software": "excel",
+    "difficulty": "Débutant",
+    "estimatedTime": "15 min",
+    "context": "Le cabinet réalise des bilans de santé pour le compte de plusieurs entreprises.\nVous devez préparer une facture récapitulative pour une entreprise partenaire, incluant la TVA.",
+    "tasks": [
+        "Calculer le montant HT pour chaque ligne (Nombre de bilans * Prix unitaire HT).",
+        "Calculer le montant total HT en additionnant toutes les lignes (fonction SOMME).",
+        "Calculer le montant de la TVA (20% du montant total HT).",
+        "Calculer le montant total TTC (Total HT + TVA)."
+    ],
+    "expectedResult": {
+        "description": "Une facture claire avec le détail des bilans, le sous-total HT, le calcul de la TVA et le total à payer en TTC.",
+        "image": ""
+    },
+    "resources": [
+        {
+            "name": "Liste des prestations (CSV)",
+            "file": "exercices_3_prestations.csv",
+            "type": "csv"
+        },
+        {
+            "name": "Paramètres de facturation (CSV)",
+            "file": "exercices_3_parametres.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Effectuer des calculs mathématiques simples (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/multiplier-et-diviser-des-nombres-dans-excel-b223da98-50ed-4fb4-be59-e24ffb9a2d67"
+        },
+        {
+            "name": "Mettre en forme des nombres sous forme de devise (Microsoft)",
+            "url": "https://support.microsoft.com/fr-fr/office/mettre-en-forme-des-nombres-sous-forme-de-devise-0a03bb38-1a07-458d-9e30-2b54366bc7f4"
+        }
+    ]
+}

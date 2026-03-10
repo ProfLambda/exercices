@@ -1,0 +1,39 @@
+{
+    "title": "Planning des congés de l'équipe",
+    "software": "excel",
+    "difficulty": "Intermédiaire",
+    "estimatedTime": "25 min",
+    "context": "En prévision des vacances d'été, vous devez préparer le tableau de suivi des congés du personnel pour l'année 2026. L'objectif est de calculer automatiquement le nombre de jours pris pour déduire le solde de chaque employé de la clinique.",
+    "tasks": [
+        "Dans le tableau descriptif des demandes de congés, utilisez la fonction NB.JOURS.OUVRES() pour calculer automatiquement le nombre de jours posés entre la Date de début et la Date de fin (en excluant automatiquement les week-ends).",
+        "Dans le tableau de synthèse, utilisez la fonction SOMME.SI() pour calculer le total des jours pris par chaque employé.",
+        "Calculez le Solde restant (Congés Acquis - Congés Pris) par une simple soustraction.",
+        "Appliquez une Mise en Forme Conditionnelle 'Nuances de couleurs' ou 'Barres de données' sur la colonne 'Solde' du tableau de synthèse pour visualiser rapidement qui a le plus ou le moins de congés restants."
+    ],
+    "expectedResult": {
+        "description": "Un tableau de synthèse fonctionnel où le solde se met à jour automatiquement dès qu'on ajoute une ligne dans le tableau des demandes, avec un visuel en barres de couleur sur la colonne Solde.",
+        "image": "facultatif.png"
+    },
+    "resources": [
+        {
+            "name": "Synthèse des soldes (CSV)",
+            "file": "exercices_7_synthese.csv",
+            "type": "csv"
+        },
+        {
+            "name": "Historique des demandes (CSV)",
+            "file": "exercices_7_demandes.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Calculer le nombre de jours ouvrés",
+            "url": "https://support.microsoft.com/fr-fr/office/la-fonction-nb-jours-ouvres-2b226e6d-209a-4c91-9549-fb93e9821901"
+        },
+        {
+            "name": "Utiliser la fonction SOMME.SI",
+            "url": "https://support.microsoft.com/fr-fr/office/fonction-somme-si-169b8c99-c05c-4483-a712-1697a653039b"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "id": "excel_09",
+    "title": "Suivi de l'ancienneté du personnel",
+    "software": "excel",
+    "difficulty": "Intermédiaire",
+    "estimatedTime": "15 min",
+    "context": "Vous travaillez comme secrétaire médical(e) dans un centre de santé regroupant plusieurs professionnels.\nLe responsable administratif vous confie un tableau contenant les informations de plusieurs membres du personnel arrivés à différentes dates dans l'établissement.\nVotre mission est de compléter et exploiter ce tableau afin de faciliter le suivi administratif des agents.",
+    "tasks": [
+        "calculer l'ancienneté rédigée sous une forme lisible : X an(s) et Y mois",
+        "calculer l'ancienneté totale en mois",
+        "calculer l'ancienneté totale en années",
+        "recopier les formules sur toutes les lignes du tableau",
+        "vérifier que les résultats sont cohérents"
+    ],
+    "expectedResult": {
+        "description": "Pour une personne ayant commencé le 27/10/2009 et terminé le 10/03/2026 :",
+        "image": "exercice_9_objectif.png"
+    },
+    "resources": [
+        {
+            "name": "Fichier Excel Exercice",
+            "file": "exercices_9.xlsx",
+            "type": "xlsx"
+        },
+        {
+            "name": "Données supplémentaires",
+            "file": "exercices_9.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Calculer la différence entre deux dates (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/calculer-la-diff%C3%A9rence-entre-deux-dates-8235e7c9-b430-44ca-9425-46100a162f38"
+        }
+    ]
+}

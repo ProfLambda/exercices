@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Exercices Excel et Word</title>
+  <script type="module" crossorigin src="/assets/index-CJ2-8LMc.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DV_47wzn.css">
+</head>
+
+<body id="home-page"
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+
+    <!-- Top Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto flex items-center justify-between p-4 h-16">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-3xl">school</span>
+                <h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Exercices Excel et Word</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Accueil</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Parcours</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle"
+                    class="p-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
+                    <span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-5xl mx-auto w-full px-4 py-8">
+        <!-- Hero / Intro -->
+        <section
+            class="mb-10 text-center md:text-left flex flex-col gap-4 py-8 px-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+            <h1 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white">Pratiquez vos compétences
+                bureautiques</h1>
+            <p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+                Améliorez votre maîtrise d'Excel et de Word avec nos exercices pratiques, allant des bases aux fonctions
+                avancées.
+            </p>
+            <div class="flex items-center gap-4 mt-4">
+                <div class="bg-primary/10 text-primary px-4 py-2 rounded-lg font-bold flex items-center gap-2">
+                    <span class="material-symbols-outlined">monitoring</span>
+                    Progression globale : <span id="global-progress">0%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="mb-8">
+            <div class="flex flex-wrap gap-3 items-center">
+                <span class="text-sm font-semibold text-slate-400 uppercase tracking-wider mr-2">Filtrer par :</span>
+                <button
+                    class="filter-btn active flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-full text-sm font-medium shadow-sm shadow-primary/20"
+                    data-filter="all">Tous</button>
+                <button
+                    class="filter-btn flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-sm font-medium hover:border-primary transition-all"
+                    data-filter="excel">Excel</button>
+                <button
+                    class="filter-btn flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-sm font-medium hover:border-primary transition-all"
+                    data-filter="word">Word</button>
+            </div>
+        </section>
+
+        <!-- Exercise Grid -->
+        <section id="exercises-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-24">
+            <!-- Loading placeholder -->
+            <div
+                class="col-span-1 md:col-span-2 text-center text-slate-500 py-10 flex flex-col items-center justify-center gap-2">
+                <span class="material-symbols-outlined animate-spin text-4xl">sync</span>
+                Chargement des exercices...
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

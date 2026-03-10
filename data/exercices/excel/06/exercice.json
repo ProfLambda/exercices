@@ -1,0 +1,33 @@
+{
+    "title": "Nettoyage de la base de données patients",
+    "software": "excel",
+    "difficulty": "Intermédiaire",
+    "estimatedTime": "15 min",
+    "context": "Le nouveau logiciel de prise de rendez-vous a exporté la liste de vos patients. Malheureusement, la saisie a été approximative au fil des années : des espaces inutiles, des noms en minuscules ou des prénoms tout en majuscules. Vous devez nettoyer ces données pour l'impression des étiquettes de publipostage.",
+    "tasks": [
+        "Créez une nouvelle colonne 'Nom Nettoyé' et employez la fonction MAJUSCULE() imbriquée avec SUPPRESPACE() pour formater les noms de famille correctement.",
+        "Créez une ligne 'Prénom Nettoyé', en utilisant la fonction NOMPROPRE() imbriquée avec SUPPRESPACE() pour que seule la première lettre du prénom soit majuscule.",
+        "Dans une dernière colonne 'Nom Complet', utilisez la fonction CONCATENER() (ou l'opérateur '&') pour réunir le Prénom et le Nom formatés avec un espace entre les deux."
+    ],
+    "expectedResult": {
+        "description": "Une colonne parfaitement formatée contenant le prénom avec une majuscule et le nom tout en majuscule, sans espaces parasites, prête pour le mailing.",
+        "image": "facultatif.png"
+    },
+    "resources": [
+        {
+            "name": "Base patient brute (CSV)",
+            "file": "exercices_6_patients_brut.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Nettoyer les données textuelles",
+            "url": "https://support.microsoft.com/fr-fr/office/supprimer-les-espaces-en-trop-dans-du-texte-1ce24a2c-e2f4-4fd5-b541-b84dc618d3ce"
+        },
+        {
+            "name": "Mettre en majuscules ou nom propre",
+            "url": "https://support.microsoft.com/fr-fr/office/modifier-la-casse-du-texte-dans-excel-c50bd5cb-282d-45df-bb21-1ce32afaf422"
+        }
+    ]
+}

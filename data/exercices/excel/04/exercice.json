@@ -1,0 +1,44 @@
+{
+    "id": "excel_04",
+    "title": "Bilan des gardes médicales",
+    "software": "excel",
+    "difficulty": "Avancé",
+    "estimatedTime": "25 min",
+    "context": "Vous devez analyser le planning de garde des médecins du mois dernier pour calculer leurs indemnités.\nL'enjeu est de repérer les gardes de nuit, les week-ends, et de calculer les primes en fonction de ces spécificités.",
+    "tasks": [
+        "Extraire le mois et l'année de chaque garde grâce à la fonction TEXTE.",
+        "Utiliser la fonction NB.SI pour compter le nombre de gardes effectuées par chaque médecin sur le mois.",
+        "Utiliser SOMME.SI.ENS pour calculer le total des heures de garde de nuit uniquement, par médecin.",
+        "Créer une Mise en Forme Conditionnelle (MFC) pour surligner en rouge les médecins ayant dépassé 50 heures de garde."
+    ],
+    "expectedResult": {
+        "description": "Un tableau croisé ou récapitulatif permettant de voir les heures de jour / nuit par praticien, avec des couleurs d'alerte sur les dépassements.",
+        "image": ""
+    },
+    "resources": [
+        {
+            "name": "Planning mensuel des gardes (CSV)",
+            "file": "exercices_4_planning.csv",
+            "type": "csv"
+        },
+        {
+            "name": "Tableau récapitulatif vierge (CSV)",
+            "file": "exercices_4_recapitulatif.csv",
+            "type": "csv"
+        }
+    ],
+    "tutorials": [
+        {
+            "name": "Utiliser NB.SI pour les listes (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/nb-si-fonction-nb-si-e0de10c6-f885-4e71-abb4-1f464816df34"
+        },
+        {
+            "name": "Fonction SOMME.SI.ENS (Microsoft Support)",
+            "url": "https://support.microsoft.com/fr-fr/office/fonction-somme-si-ens-c9e748f5-7ea7-455d-9406-611cebce642b"
+        },
+        {
+            "name": "Utiliser la mise en forme conditionnelle (Microsoft)",
+            "url": "https://support.microsoft.com/fr-fr/office/utiliser-la-mise-en-forme-conditionnelle-pour-mettre-en-%C3%A9vidence-des-informations-c40c83a8-485c-48bc-bce0-6c9ab481ecba"
+        }
+    ]
+}

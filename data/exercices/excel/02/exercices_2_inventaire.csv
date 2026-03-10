@@ -1,0 +1,7 @@
+Reference;Article;Code Fournisseur;Quantite Restante;Seuil Alerte;Prix Unitaire
+S-001;Seringues 5ml;F-01;25;50;0.15
+S-002;Seringues 10ml;F-01;80;50;0.20
+P-001;Pansements adhésifs;F-02;120;100;0.05
+P-002;Compresses stériles;F-02;40;100;0.10
+G-001;Gants latex taille M;F-03;15;50;0.30
+G-002;Gants nitrile taille L;F-03;60;50;0.35

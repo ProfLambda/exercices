@@ -1,0 +1,76 @@
+{
+    "exercices": [
+        {
+            "id": "excel_01",
+            "title": "Bilan hebdomadaire des consultations",
+            "software": "excel",
+            "difficulty": "Débutant",
+            "estimatedTime": "15 min",
+            "description": "Utilisez les fonctions de base (SOMME, MOYENNE, MAX, SI) pour analyser l'activité hebdomadaire."
+        },
+        {
+            "id": "excel_02",
+            "title": "Gestion des stocks de matériel médical",
+            "software": "excel",
+            "difficulty": "Intermédiaire",
+            "estimatedTime": "20 min",
+            "description": "Surveillez les stocks et déclenchez des alertes commandes avec RECHERCHEV et NB.SI."
+        },
+        {
+            "id": "excel_03",
+            "title": "Facturation des patients professionnels",
+            "software": "excel",
+            "difficulty": "Débutant",
+            "estimatedTime": "15 min",
+            "description": "Éditez des factures en calculant montants HT et TTC via des formules mathématiques simples."
+        },
+        {
+            "id": "excel_04",
+            "title": "Bilan des gardes médicales",
+            "software": "excel",
+            "difficulty": "Avancé",
+            "estimatedTime": "25 min",
+            "description": "Analysez des temps de travail complexes à l'aide de NB.SI.ENS, SOMME.SI.ENS et de Mise en Forme Conditionnelle."
+        },
+        {
+            "id": "excel_05",
+            "title": "Suivi des impayés et relances patients",
+            "software": "excel",
+            "difficulty": "Intermédiaire",
+            "estimatedTime": "20 min",
+            "description": "Formulez des alertes de retards de paiement en croisant dates et conditions."
+        },
+        {
+            "id": "excel_06",
+            "title": "Nettoyage de la base de données patients",
+            "software": "excel",
+            "difficulty": "Intermédiaire",
+            "estimatedTime": "15 min",
+            "description": "Uniformisez les noms et prénoms grâce aux fonctions de nettoyage de texte."
+        },
+        {
+            "id": "excel_07",
+            "title": "Planning des congés de l'équipe",
+            "software": "excel",
+            "difficulty": "Intermédiaire",
+            "estimatedTime": "25 min",
+            "description": "Calcul du nombre de jours ouvrés posés et mise en forme esthétique des soldes."
+        },
+        {
+            "id": "excel_08",
+            "title": "Tableau de bord mensuel de l'activité",
+            "software": "excel",
+            "difficulty": "Avancé",
+            "estimatedTime": "30 min",
+            "description": "Synthétisez et visualisez le volume de consultations et le chiffre d'affaires (TCD)."
+        },
+        {
+            "id": "excel_09",
+            "title": "Suivi de l'ancienneté du personnel",
+            "software": "excel",
+            "difficulty": "Intermédiaire",
+            "estimatedTime": "15 min",
+            "description": "Compléter un tableau pour calculer l'ancienneté de chaque agent avec DATEDIF."
+        }
+    ]
+}
