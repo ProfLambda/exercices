@@ -23,11 +23,15 @@
     "tutorials": [
         {
             "name": "Nettoyer les données textuelles",
-            "url": "https://support.microsoft.com/fr-fr/office/supprimer-les-espaces-en-trop-dans-du-texte-1ce24a2c-e2f4-4fd5-b541-b84dc618d3ce"
+            "url": "https://support.microsoft.com/fr-fr/office/les-dix-meilleures-solutions-pour-nettoyer-vos-donn%C3%A9es-2844b620-677c-47a7-ac3e-c2e157d1db19"
         },
         {
-            "name": "Mettre en majuscules ou nom propre",
-            "url": "https://support.microsoft.com/fr-fr/office/modifier-la-casse-du-texte-dans-excel-c50bd5cb-282d-45df-bb21-1ce32afaf422"
+            "name": "fonction SUPPRESPACE()",
+            "url": "https://support.microsoft.com/fr-fr/office/supprespace-fonction-410388fa-c5df-49c6-b16c-9e5630b479f9"
+        },
+        {
+            "name": "Fonctions de texte (référence)",
+            "url": "https://support.microsoft.com/fr-fr/office/fonctions-de-texte-r%C3%A9f%C3%A9rence-cccd86ad-547d-4ea9-a065-7bb697c2a56e"
         }
     ]
 }

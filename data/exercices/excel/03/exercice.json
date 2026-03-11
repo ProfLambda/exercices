@@ -30,11 +30,11 @@
     "tutorials": [
         {
             "name": "Effectuer des calculs mathématiques simples (Microsoft Support)",
-            "url": "https://support.microsoft.com/fr-fr/office/multiplier-et-diviser-des-nombres-dans-excel-b223da98-50ed-4fb4-be59-e24ffb9a2d67"
+            "url": "https://support.microsoft.com/fr-fr/office/cr%C3%A9er-une-formule-simple-dans-excel-11a5f0e5-38a3-4115-85bc-f4a465f64a8a"
         },
         {
             "name": "Mettre en forme des nombres sous forme de devise (Microsoft)",
-            "url": "https://support.microsoft.com/fr-fr/office/mettre-en-forme-des-nombres-sous-forme-de-devise-0a03bb38-1a07-458d-9e30-2b54366bc7f4"
+            "url": "https://support.microsoft.com/fr-fr/office/mettre-en-forme-des-nombres-sous-forme-de-devise-dans-excel-0a03bb38-1a07-458d-9e30-2b54366bc7a4"
         }
     ]
 }
