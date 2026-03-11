@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Top 20 des Fonctionnalités Word</title>
+		<!-- Styles de l'application -->
+		<style>
+			body {
+				/* Utilisation de la pile de polices système native pour un rendu optimal et rapide */
+				font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+					"Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+					sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+					"Segoe UI Symbol", "Noto Color Emoji";
+			}
+
+			/* Style simple pour la transition de couleur de fond */
+			.card-acquired {
+				background-color: #eff6ff !important;
+				/* blue-50 */
+				border: 2px solid #3b82f6;
+				/* blue-500 */
+			}
+
+			.summary-item-acquired {
+				background-color: #dbeafe;
+				/* blue-100 */
+				color: #1e3a8a;
+				/* blue-900 */
+				border-color: #3b82f6;
+				/* blue-500 */
+			}
+			/* Navigation dropdown */
+			.dropdown:hover .dropdown-menu {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+			}
+
+			.dropdown-menu {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-10px);
+				transition: all 0.3s ease;
+			}
+		</style>
+		<script type="module" crossorigin src="../assets/main-GO_0arJX.js"></script>
+		<script type="module" crossorigin src="../assets/progress-CuWY7VZX.js"></script>
+		<link rel="stylesheet" crossorigin href="../assets/main-D7JR0PC6.css">
+	</head>
+
+	<body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen pt-20">
+		<!-- Barre de Navigation -->
+		
+    <!-- Top Navigation -->
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto flex items-center justify-between p-4 h-16">
+            <div class="flex items-center gap-2">
+                <a href="/" class="text-primary hover:bg-primary/10 flex items-center justify-center p-2 rounded-lg transition-colors mr-2">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </a>
+                <span class="material-symbols-outlined text-primary text-3xl hidden sm:block">school</span>
+                <h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Exercices Excel et Word</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="/">Exercices</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors text-primary" href="/guides/">Guides de validation</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="p-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
+                    <span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+		<!-- Contenu Principal -->
+		<main class="container mx-auto p-6 flex-grow">
+			<h2 class="text-3xl font-bold text-center mb-10 text-gray-800"
+				>Top 20 des Fonctionnalités et Raccourcis Word
+				<span class="text-xl font-medium text-gray-500"
+					>(<span id="progress-count">0</span>/20)</span
+				>
+			</h2>
+
+			<!-- Grille des fonctionnalités -->
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+				<!-- 1. Copier/Coller/Couper -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-copypaste">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="copypaste" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>1. Copier / Coller / Couper</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Les raccourcis les plus fondamentaux pour manipuler du
+						texte.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourcis :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + C (Copier)
+Ctrl + X (Couper)
+Ctrl + V (Coller)</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Sélectionnez le texte et utilisez ces raccourcis pour le
+						déplacer ou le dupliquer rapidement.</p
+					>
+				</div>
+
+				<!-- 2. Annuler/Rétablir -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-undoredo">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="undoredo" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>2. Annuler / Rétablir</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Annule ou rétablit la dernière action effectuée.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourcis :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + Z (Annuler)
+Ctrl + Y (Rétablir)</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Indispensable pour corriger rapidement les erreurs ou revenir
+						en arrière.
+					</p>
+				</div>
+
+				<!-- 3. Enregistrer -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-save">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="save" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>3. Enregistrer</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Sauvegardez rapidement votre document pour ne pas perdre
+						votre travail.
+					</p>
+					<p class="text-sm font-medium text-gray-600">Raccourci :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + S</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>À prendre comme habitude : enregistrez régulièrement votre
+						document.</p
+					>
+				</div>
+
+				<!-- 4. Gras/Italique/Souligné -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-formatting">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="formatting" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>4. Gras / Italique / Souligné</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Mettez en forme rapidement le texte sélectionné.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourcis :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + B (Gras)
+Ctrl + I (Italique)
+Ctrl + U (Souligné)</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Sélectionnez le texte et appliquez le style souhaité
+						instantanément.</p
+					>
+				</div>
+
+				<!-- 5. Tout Sélectionner -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-selectall">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="selectall" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>5. Tout Sélectionner</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Sélectionne l'intégralité du contenu du document.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourci :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + A</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Utile pour copier, formater ou supprimer tout le contenu d'un
+						document.
+					</p>
+				</div>
+
+				<!-- 6. Rechercher -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-find">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="find" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>6. Rechercher</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Ouvre le volet de navigation pour rechercher du texte dans le
+						document.
+					</p>
+					<p class="text-sm font-medium text-gray-600">Raccourci :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + F</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Très pratique pour trouver rapidement un mot ou une phrase
+						dans de longs documents.</p
+					>
+				</div>
+
+				<!-- 7. Imprimer -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-print">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="print" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>7. Imprimer</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Ouvre la boîte de dialogue d'impression.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourci :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + P</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Accédez rapidement aux options d'impression et prévisualisez
+						votre document avant impression.</p
+					>
+				</div>
+
+				<!-- 8. Nouveau/Ouvrir/Fermer -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-fileops">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="fileops" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>8. Nouveau / Ouvrir / Fermer</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Gérez vos documents rapidement avec ces raccourcis.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourcis :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + N (Nouveau document)
+Ctrl + O (Ouvrir un document)
+Ctrl + W (Fermer le document actif)</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Naviguez entre vos documents sans utiliser la souris.</p
+					>
+				</div>
+
+				<!-- 9. Taille de Police -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-fontsize">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="fontsize" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>9. Augmenter / Réduire Taille Police</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Modifiez la taille de la police par incréments.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourcis :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + Maj + &gt; (Augmenter)
+Ctrl + Maj + &lt; (Diminuer)</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Ajustez rapidement la taille de police du texte
+						sélectionné.</p
+					>
+				</div>
+
+				<!-- 10. Insérer Lien Hypertexte -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-hyperlink">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="hyperlink" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>10. Insérer Lien Hypertexte</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Insère un lien hypertexte dans le document.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourci :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + K</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Sélectionnez du texte et appuyez sur Ctrl+K pour ajouter un
+						lien URL.</p
+					>
+				</div>
+
+				<!-- 11. Alignement du Texte -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-align">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="align" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>11. Alignement du Texte</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Alignez le texte à gauche, au centre, à droite ou
+						justifiez-le.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Raccourcis :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Ctrl + E (Centrer)
+Ctrl + L (Aligner à gauche)
+Ctrl + R (Aligner à droite)
+Ctrl + J (Justifier)</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Formatez rapidement l'alignement de vos paragraphes.</p
+					>
+				</div>
+
+				<!-- 12. Styles -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-styles">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="styles" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>12. Utilisation des Styles</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Appliquez des styles prédéfinis (Titre 1, Titre 2, Normal,
+						etc.) pour une mise en forme cohérente.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Avantages :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>- Homogénéité de la mise en forme
+- Génération automatique de table des matières
+- Navigation facile dans le document</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Accédez aux styles via l'onglet Accueil ou utilisez
+						Ctrl+Alt+1/2/3 pour Titre 1/2/3.</p
+					>
+				</div>
+
+				<!-- 13. Volet de Navigation -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-navpane">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="navpane" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>13. Volet de Navigation</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Affiche une vue d'ensemble du document avec les titres
+						structurés.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Activation :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Affichage &gt; Volet de navigation</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Naviguez facilement entre les sections de documents longs et
+						réorganisez le contenu.</p
+					>
+				</div>
+
+				<!-- 14. Suivi des Modifications -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-trackchanges">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="trackchanges" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>14. Suivi des Modifications</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Permet de contrôler et visualiser toutes les modifications
+						apportées au document.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Activation :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Révision &gt; Suivi des modifications
+Raccourci: Ctrl + Maj + E</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Essentiel pour la collaboration : toutes les modifications
+						sont enregistrées et visibles.</p
+					>
+				</div>
+
+				<!-- 15. Modèles de Documents -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-templates">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="templates" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>15. Modèles de Documents</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Utilisez des modèles prédéfinis pour créer rapidement des
+						documents professionnels.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Types :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>- CV et lettres de motivation
+- Rapports et documents académiques
+- Factures et documents commerciaux
+- Invitations et cartes</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Fichier &gt; Nouveau &gt; Parcourez les modèles
+						disponibles.</p
+					>
+				</div>
+
+				<!-- 16. Presse-papiers Office -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-clipboard">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="clipboard" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>16. Presse-papiers Office</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Conserve jusqu'à 24 éléments copiés en mémoire pour les
+						coller ultérieurement.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Accès :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Accueil &gt; Presse-papiers (clic sur la flèche)</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Très pratique pour copier plusieurs éléments à la fois et les
+						coller sélectivement.</p
+					>
+				</div>
+
+				<!-- 17. Dictée Vocale -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-dictation">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="dictation" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>17. Fonction Dictée</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Convertit la parole en texte directement dans Word.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Activation :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Accueil &gt; Dicter
+Ou utilisez le micro dans la barre d'outils</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Idéal pour rédiger de longs passages sans taper au
+						clavier.</p
+					>
+				</div>
+
+				<!-- 18. Mode Lecture -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-readmode">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="readmode" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>18. Mode Lecture</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Lisez les documents sans distraction avec un affichage
+						optimisé.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Activation :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Affichage &gt; Mode Lecture</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Parfait pour réviser des documents longs avec des options
+						pour zoomer et annoter.</p
+					>
+				</div>
+
+				<!-- 19. Recherche Intelligente -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-smartlookup">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="smartlookup" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>19. Recherche Intelligente</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Recherchez des informations sur Internet directement depuis
+						Word.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Activation :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>Clic droit sur un mot &gt; Recherche intelligente
+Ou: Alt + Clic sur un mot</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Obtenez des définitions, Wikipedia et plus sans quitter votre
+						document.
+					</p>
+				</div>
+
+				<!-- 20. Insertion d'Éléments Visuels -->
+				<div
+					class="bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] break-words relative group"
+					id="card-visuals">
+					<div class="absolute top-5 right-5 z-10">
+						<label
+							class="flex items-center space-x-2 cursor-pointer bg-white/80 p-1 rounded backdrop-blur-sm">
+							<span
+								class="text-xs text-gray-400 group-hover:text-gray-600 transition-colors select-none"
+								>Acquis</span
+							>
+							<input
+								type="checkbox"
+								class="mastery-checkbox w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300 cursor-pointer"
+								data-id="visuals" />
+						</label>
+					</div>
+					<h3 class="text-xl font-semibold text-blue-700 mb-2 pr-20"
+						>20. Insertion d'Éléments Visuels</h3
+					>
+					<p class="text-gray-700 mb-3"
+						>Word offre une vaste bibliothèque d'éléments visuels pour
+						enrichir vos documents.</p
+					>
+					<p class="text-sm font-medium text-gray-600">Types :</p>
+					<pre
+						class="bg-gray-100 p-3 rounded text-sm font-mono text-purple-700 overflow-x-auto whitespace-pre-wrap"><code>- Images et photos
+- Icônes professionnelles
+- Formes et SmartArt
+- Graphiques et diagrammes
+- Modèles 3D</code></pre>
+					<p class="text-sm font-medium text-gray-600 mt-3">Usage :</p>
+					<p class="text-gray-700 mb-1"
+						>Insertion &gt; Images/Icônes/Formes pour rendre vos documents
+						visuellement attrayants.</p
+					>
+				</div>
+			</div>
+
+			<!-- Section Récapitulatif Compact -->
+			<section
+				id="summary-section"
+				class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+				<h3
+					class="text-lg font-bold text-gray-800 mb-4 flex items-center flex-wrap">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5 mr-2 text-blue-600"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+					</svg>
+					Récapitulatif de
+					<input
+						type="text"
+						id="user-name"
+						placeholder="[Votre Prénom]"
+						class="ml-2 bg-transparent border-none focus:ring-0 p-0 text-lg font-bold text-gray-800 placeholder-gray-400 w-64 outline-none" />
+				</h3>
+				<div
+					class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3"
+					id="summary-grid">
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-gray-800 text-white p-6 mt-12">
+			<div class="container mx-auto text-center text-sm">
+				<p>© 2025 Guide Word. Contenu généré à titre informatif.</p>
+			</div>
+		</footer>
+		<!-- Scripts -->
+		<script>
+			const navbarUrl = new URL("nav/navbar.html", window.location.href);
+			console.log(`[Navbar] Attempting to fetch navbar from: ${navbarUrl}`);
+
+			fetch(navbarUrl)
+				.then((response) => {
+					if (!response.ok) {
+						throw new Error(
+							`[Navbar] Network response was not ok: ${response.status} ${response.statusText}`
+						);
+					}
+					return response.text();
+				})
+				.then((data) => {
+					document.getElementById("navbar-container").innerHTML = data;
+					console.log("[Navbar] Successfully loaded.");
+				})
+				.catch((error) => {
+					console.error("[Navbar] Fetch Error:", error);
+					const navbarContainer =
+						document.getElementById("navbar-container");
+					if (navbarContainer) {
+						navbarContainer.innerHTML =
+							'<p class="text-red-500 text-center">Erreur: La barre de navigation n\'a pas pu être chargée.</p>';
+					}
+				});
+
+			const pageConfig = {
+				storageKey: "wordMasteryProgress",
+				functionsList: [
+					{ id: "copypaste", name: "1. Copier/Coller" },
+					{ id: "undoredo", name: "2. Annuler/Rétablir" },
+					{ id: "save", name: "3. Enregistrer" },
+					{ id: "formatting", name: "4. Formatage" },
+					{ id: "selectall", name: "5. Tout Sélectionner" },
+					{ id: "find", name: "6. Rechercher" },
+					{ id: "print", name: "7. Imprimer" },
+					{ id: "fileops", name: "8. Fichiers" },
+					{ id: "fontsize", name: "9. Taille Police" },
+					{ id: "hyperlink", name: "10. Lien" },
+					{ id: "align", name: "11. Alignement" },
+					{ id: "styles", name: "12. Styles" },
+					{ id: "navpane", name: "13. Navigation" },
+					{ id: "trackchanges", name: "14. Suivi" },
+					{ id: "templates", name: "15. Modèles" },
+					{ id: "clipboard", name: "16. Presse-papiers" },
+					{ id: "dictation", name: "17. Dictée" },
+					{ id: "readmode", name: "18. Mode Lecture" },
+					{ id: "smartlookup", name: "19. Recherche Intel." },
+					{ id: "visuals", name: "20. Visuels" },
+				],
+			};
+		</script>
+	</body>
+</html>
