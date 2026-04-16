@@ -121,3 +121,17 @@ header {
     font-size: 12px;
     z-index: 100;
 }
+
+/* 5. AIRY SPACING UTILITIES (Refined balance) */
+.airy-py-lg { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+.airy-gap-lg { gap: 5rem !important; }
+.airy-mb-lg { margin-bottom: 5rem !important; }
+.airy-mb-md { margin-bottom: 3rem !important; }
+.airy-row { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+
+/* Grid specific fixes */
+#lexicon-content.airy-gap-lg {
+    display: grid !important;
+    grid-template-columns: 1fr;
+}
+

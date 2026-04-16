@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Terminologie Médicale - Préparation BC03 | ProfLambda</title>
+    <!-- Sécurité & SEO -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://*.github.io; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+
+    <!-- PWA & Mobile -->
+    <link rel="apple-touch-icon" href="./assets/icon-192.png">
+    <link rel="icon" type="image/png" href="./assets/icon-192.png">
+
+    <script defer src="./assets/gsap.min.js"></script>
+    <script defer src="./assets/main.js"></script>
+    <script defer src="./assets/terminologie.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BfUxkiNf.css">
+    <link rel="stylesheet" href="./assets/custom-design.css?v=1.2">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+
+    <!-- Top Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto flex items-center justify-between p-4 h-16">
+            <div class="flex items-center gap-2">
+                <a href="./"
+                    class="text-primary hover:bg-primary/10 flex items-center justify-center p-2 rounded-lg transition-colors mr-2">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </a>
+                <span class="material-symbols-outlined text-primary text-3xl hidden sm:block">school</span>
+                <span class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">ProfLambda</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="./">Exercices</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="./guides/">Guides de
+                    validation</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors"
+                    href="./formation.html">Formation 2026</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors active text-primary font-bold"
+                    href="./terminologie.html">Terminologie</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle"
+                    class="p-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
+                    <span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-5xl mx-auto w-full px-4 airy-py-lg">
+        <!-- Hero Section -->
+        <section class="animate-entrance airy-mb-md text-center md:text-left">
+            <div
+                class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                RNCP 36734 - Préparation BC03
+            </div>
+            <h1
+                class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6 leading-tight tracking-tighter uppercase">
+                Dictionnaire de <br>Terminologie Médicale
+            </h1>
+            <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl leading-relaxed">
+                Le socle de l'ingénierie du compte-rendu médical. La maîtrise de ces termes est indispensable pour garantir une précision orthographique éliminatoire.
+            </p>
+        </section>
+
+        <!-- Search Section -->
+        <section class="sticky top-[4.5rem] z-40 airy-mb-md">
+            <div class="relative max-w-2xl mx-auto group">
+                <!-- Decorative background glow -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-[2rem] blur opacity-25 group-focus-within:opacity-50 transition duration-1000"></div>
+                
+                <div class="relative flex items-center bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl border border-slate-200 dark:border-slate-800 p-2 rounded-[2rem] shadow-2xl transition-all">
+                    <div class="flex items-center justify-center w-12 h-12 text-slate-400">
+                        <span class="material-symbols-outlined text-2xl group-focus-within:text-primary transition-colors">search</span>
+                    </div>
+                    <input type="text" id="terms-search" 
+                        placeholder="Rechercher une racine, un préfixe, une abréviation..." 
+                        spellcheck="false"
+                        class="flex-1 bg-transparent border-none focus:ring-0 text-slate-900 dark:text-white placeholder-slate-400 text-lg py-4 outline-none">
+                    <div class="hidden md:flex items-center gap-2 pr-4">
+                        <kbd class="px-2 py-1 text-[10px] font-bold text-slate-400 bg-slate-100 dark:bg-slate-800 rounded-md border border-slate-200 dark:border-slate-700">ESC</kbd>
+                    </div>
+                </div>
+            </div>
+            <!-- Results count / No results found -->
+            <div id="search-feedback" class="text-center mt-6 text-sm text-slate-500 font-medium opacity-0 pointer-events-none transition-all duration-300">
+                Aucun résultat trouvé pour votre recherche.
+            </div>
+        </section>
+
+        <!-- Lexique Categories -->
+        <div id="lexicon-content" class="airy-gap-lg airy-mb-lg">
+            
+            <!-- 1. Racines -->
+            <section class="lexicon-section bg-white dark:bg-slate-900 p-8 md:p-12 rounded-[2rem] shadow-sm border border-slate-100 dark:border-slate-800">
+                <h2 class="text-2xl font-black mb-8 flex items-center gap-3 uppercase tracking-tighter">
+                    <span class="w-10 h-10 rounded-xl bg-green-100 dark:bg-green-950/30 text-green-600 flex items-center justify-center">
+                        <span class="material-symbols-outlined">account_tree</span>
+                    </span>
+                    1. Les Racines et Organes
+                </h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead>
+                            <tr class="text-slate-400 text-xs font-black uppercase tracking-widest border-b border-slate-100 dark:border-slate-800">
+                                <th class="pb-4 pr-4 w-1/4">Racine</th>
+                                <th class="pb-4 pr-4 w-1/3">Signification</th>
+                                <th class="pb-4">Exemple (Signification)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-50 dark:divide-slate-800">
+                            <tr><td class="py-4 font-bold text-primary">Adéno-</td><td class="airy-row">Glande / Ganglion</td><td class="py-4 text-slate-500 italic">Adénopathie (affection des ganglions)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Angio-</td><td class="airy-row">Vaisseau</td><td class="py-4 text-slate-500 italic">Angiographie (examen des vaisseaux)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Arthro-</td><td class="airy-row">Articulation</td><td class="py-4 text-slate-500 italic">Arthrose (dégénérescence articulaire)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Cardio-</td><td class="airy-row">Cœur</td><td class="py-4 text-slate-500 italic">Cardiomégalie (augmentation du volume du cœur)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Chol(é)-</td><td class="airy-row">Bile</td><td class="py-4 text-slate-500 italic">Cholécystectomie (ablation de la vésicule biliaire)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Cysto-</td><td class="airy-row">Vessie</td><td class="py-4 text-slate-500 italic">Cystite (inflammation de la vessie)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Entéro-</td><td class="airy-row">Intestin grêle</td><td class="py-4 text-slate-500 italic">Entérite (inflammation intestinale)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Gastro-</td><td class="airy-row">Estomac</td><td class="py-4 text-slate-500 italic">Gastralgie (douleur à l'estomac)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Hémo- / Hémat-</td><td class="airy-row">Sang</td><td class="py-4 text-slate-500 italic">Hématémèse (vomissement de sang)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Hépato-</td><td class="airy-row">Foie</td><td class="py-4 text-slate-500 italic">Hépatomégalie (gros foie)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Myo-</td><td class="airy-row">Muscle</td><td class="py-4 text-slate-500 italic">Myocardite (inflammation du muscle cardiaque)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Néphro-</td><td class="airy-row">Rein</td><td class="py-4 text-slate-500 italic">Néphropathie (maladie du rein)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Neuro-</td><td class="airy-row">Nerf / Système nerveux</td><td class="py-4 text-slate-500 italic">Neurologie (étude du système nerveux)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Ostéo-</td><td class="airy-row">Os</td><td class="py-4 text-slate-500 italic">Ostéosynthèse (réunion de fragments osseux)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Pneumo-</td><td class="airy-row">Poumon / Air</td><td class="py-4 text-slate-500 italic">Pneumothorax (air dans la plèvre)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 2. Préfixes -->
+            <section class="lexicon-section bg-white dark:bg-slate-900 p-8 md:p-12 rounded-[2rem] shadow-sm border border-slate-100 dark:border-slate-800">
+                <h2 class="text-2xl font-black mb-8 flex items-center gap-3 uppercase tracking-tighter">
+                    <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950/30 text-blue-600 flex items-center justify-center">
+                        <span class="material-symbols-outlined">subtitles</span>
+                    </span>
+                    2. Les Préfixes (Position, Nombre, État)
+                </h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead>
+                            <tr class="text-slate-400 text-xs font-black uppercase tracking-widest border-b border-slate-100 dark:border-slate-800">
+                                <th class="pb-4 pr-4 w-1/4">Préfixe</th>
+                                <th class="pb-4 pr-4 w-1/3">Signification</th>
+                                <th class="pb-4">Exemple (Signification)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-50 dark:divide-slate-800">
+                            <tr><td class="py-4 font-bold text-primary">A- / An-</td><td class="airy-row">Absence, privation</td><td class="py-4 text-slate-500 italic">Apnée (arrêt de la respiration)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Brady-</td><td class="airy-row">Lent</td><td class="py-4 text-slate-500 italic">Bradycardie (rythme cardiaque lent)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Dys-</td><td class="airy-row">Difficulté, anomalie</td><td class="py-4 text-slate-500 italic">Dyspnée (difficulté à respirer)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Endo-</td><td class="airy-row">À l'intérieur</td><td class="py-4 text-slate-500 italic">Endoscopie (examen de l'intérieur)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Epi-</td><td class="airy-row">Au-dessus</td><td class="py-4 text-slate-500 italic">Épigastralgie (douleur au-dessus de l'estomac)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Hémi-</td><td class="airy-row">Moitié</td><td class="py-4 text-slate-500 italic">Hémiplégie (paralysie d'une moitié du corps)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Hyper-</td><td class="airy-row">Trop, augmentation</td><td class="py-4 text-slate-500 italic">Hypertension (tension élevée)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Hypo-</td><td class="airy-row">Peu, diminution</td><td class="py-4 text-slate-500 italic">Hypoglycémie (taux de sucre bas)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Péri-</td><td class="airy-row">Autour</td><td class="py-4 text-slate-500 italic">Péricardite (autour du cœur)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Poly-</td><td class="airy-row">Plusieurs, beaucoup</td><td class="py-4 text-slate-500 italic">Polyurie (urines abondantes)</td></tr>
+                            <tr><td class="py-4 font-bold text-primary">Tachy-</td><td class="airy-row">Rapide</td><td class="py-4 text-slate-500 italic">Tachycardie (rythme cardiaque rapide)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 3. Suffixes -->
+            <section class="lexicon-section bg-white dark:bg-slate-900 p-8 md:p-12 rounded-[2rem] shadow-sm border border-slate-100 dark:border-slate-800">
+                <h2 class="text-2xl font-black mb-8 flex items-center gap-3 uppercase tracking-tighter">
+                    <span class="w-10 h-10 rounded-xl bg-orange-100 dark:bg-orange-950/30 text-orange-600 flex items-center justify-center">
+                        <span class="material-symbols-outlined">label_important</span>
+                    </span>
+                    3. Les Suffixes Pathologiques et Actes
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                    <div>
+                        <h4 class="text-xs font-black uppercase text-slate-500 dark:text-slate-400 mb-6 tracking-widest">Pathologies & Symptômes</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm">
+                                <thead>
+                                    <tr class="text-slate-400 text-[10px] font-black uppercase tracking-widest border-b border-slate-100 dark:border-slate-800">
+                                        <th class="pb-3 pr-4 w-1/3">Suffixe</th>
+                                        <th class="pb-3 w-1/2">Signification</th>
+                                        <th class="pb-3">Exemple</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-50 dark:divide-slate-800">
+                                    <tr><td class="py-5 font-bold text-primary">-algie</td><td class="airy-row">Douleur</td><td class="py-4 text-slate-500 italic text-xs">Névralgie</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-ite</td><td class="airy-row">Inflammation</td><td class="py-4 text-slate-500 italic text-xs">Appendicite</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-logie</td><td class="airy-row">Étude de</td><td class="py-4 text-slate-500 italic text-xs">Dermatologie</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-ome</td><td class="airy-row">Tumeur</td><td class="py-4 text-slate-500 italic text-xs">Adénome</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-ose</td><td class="airy-row">État chronique</td><td class="py-4 text-slate-500 italic text-xs">Arthrose</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-pathie</td><td class="airy-row">Maladie</td><td class="py-4 text-slate-500 italic text-xs">Cardiopathie</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-rrhée</td><td class="airy-row">Écoulement</td><td class="py-4 text-slate-500 italic text-xs">Rhinnorrhée</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-black uppercase text-slate-500 dark:text-slate-400 mb-6 tracking-widest">Interventions & Examens</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm">
+                                <thead>
+                                    <tr class="text-slate-400 text-[10px] font-black uppercase tracking-widest border-b border-slate-100 dark:border-slate-800">
+                                        <th class="pb-3 pr-4 w-1/3">Suffixe</th>
+                                        <th class="pb-3 w-1/2">Signification</th>
+                                        <th class="pb-3">Exemple</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-50 dark:divide-slate-800">
+                                    <tr><td class="py-5 font-bold text-primary">-ectomie</td><td class="airy-row">Ablation</td><td class="py-4 text-slate-500 italic text-xs">Prostatectomie</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-graphie</td><td class="airy-row">Image (Enregistrement)</td><td class="py-4 text-slate-500 italic text-xs">Radiographie</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-scopie</td><td class="airy-row">Examen visuel</td><td class="py-4 text-slate-500 italic text-xs">Coloscopie</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-stomie</td><td class="airy-row">Abouchement</td><td class="py-4 text-slate-500 italic text-xs">Colostomie</td></tr>
+                                    <tr><td class="py-4 font-bold text-primary">-tomie</td><td class="airy-row">Incision</td><td class="py-4 text-slate-500 italic text-xs">Laparotomie</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Abréviations -->
+            <section class="lexicon-section bg-slate-50 dark:bg-slate-900/50 p-8 md:p-12 rounded-[2rem] shadow-sm border border-slate-100 dark:border-slate-800 overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                <h2 class="text-2xl font-black mb-8 flex items-center gap-3 uppercase tracking-tighter relative z-10 text-primary">
+                    <span class="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined">short_text</span>
+                    </span>
+                    4. Abréviations Médicales Indispensables
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 relative z-10">
+                    <div class="p-4 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 rounded-xl shadow-sm">
+                        <span class="block text-primary font-black text-lg">ATCD</span>
+                        <span class="text-xs text-slate-600 dark:text-slate-400">Antécédents</span>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 rounded-xl shadow-sm">
+                        <span class="block text-primary font-black text-lg">AVC</span>
+                        <span class="text-xs text-slate-600 dark:text-slate-400">Accident Vasculaire Cérébral</span>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 rounded-xl shadow-sm">
+                        <span class="block text-primary font-black text-lg">ECG</span>
+                        <span class="text-xs text-slate-600 dark:text-slate-400">Électrocardiogramme</span>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 rounded-xl shadow-sm">
+                        <span class="block text-primary font-black text-lg">HGT</span>
+                        <span class="text-xs text-slate-600 dark:text-slate-400">Hémoglucotest</span>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 rounded-xl shadow-sm">
+                        <span class="block text-primary font-black text-lg">IDM</span>
+                        <span class="text-xs text-slate-400">Infarctus du Myocarde</span>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 rounded-xl shadow-sm">
+                        <span class="block text-primary font-black text-lg">LCR</span>
+                        <span class="text-xs text-slate-400">Liquide Céphalo-Rachidien</span>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 rounded-xl shadow-sm">
+                        <span class="block text-primary font-black text-lg">ORL</span>
+                        <span class="text-xs text-slate-400">Oto-Rhino-Laryngologie</span>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700/50 rounded-xl shadow-sm">
+                        <span class="block text-primary font-black text-lg">TA</span>
+                        <span class="text-xs text-slate-300 dark:text-slate-400">Tension Artérielle</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section Word Guide -->
+        <section class="airy-mb-lg">
+            <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-8 tracking-tighter uppercase">
+                Guide Pratique : Votre "Dictionnaire Métier"
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800">
+                    <h3 class="font-bold text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined">spellcheck</span> Auto-Correction
+                    </h3>
+                    <p class="text-xs text-slate-500 mb-6 leading-relaxed">Automatisez les termes complexes (ex: "brady" -> "bradycardie").</p>
+                    <ol class="text-[11px] space-y-3 font-medium text-slate-600 dark:text-slate-400">
+                        <li>1. Fichier > Options > Vérification</li>
+                        <li>2. Options de correction automatique</li>
+                        <li>3. Tapez le code dans "Remplacer"</li>
+                        <li>4. Tapez le mot complet dans "Par"</li>
+                    </ol>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800">
+                    <h3 class="font-bold text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined">text_snippet</span> QuickParts
+                    </h3>
+                    <p class="text-xs text-slate-500 mb-6 leading-relaxed">Insérez des paragraphes entiers ou des conclusions types.</p>
+                    <ol class="text-[11px] space-y-3 font-medium text-slate-600 dark:text-slate-400">
+                        <li>1. Sélectionnez le texte</li>
+                        <li>2. Insertion > Explorer QuickPart</li>
+                        <li>3. Enregistrer la sélection</li>
+                        <li>4. Appelez via le nom + Touche F3</li>
+                    </ol>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800">
+                    <h3 class="font-bold text-primary mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined">database</span> Dictionnaire .dic
+                    </h3>
+                    <p class="text-xs text-slate-500 mb-6 leading-relaxed">Évitez le soulignement rouge des termes médicaux valides.</p>
+                    <ol class="text-[11px] space-y-3 font-medium text-slate-600 dark:text-slate-400">
+                        <li>1. Clic droit sur un mot souligné</li>
+                        <li>2. Ajouter au dictionnaire</li>
+                        <li>3. Exportez le fichier .dic pour vos autres postes de travail</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bibliographie -->
+        <section class="bg-slate-50 dark:bg-slate-900/50 p-8 md:p-12 rounded-2xl border border-slate-200 dark:border-slate-800">
+            <h2 class="text-sm font-black text-slate-400 uppercase tracking-widest mb-10 text-center md:text-left text-center">Références Indexées</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-[11px] text-slate-500">
+                <ul class="space-y-3">
+                    <li><span class="font-bold">1.</span> <a href="https://www.francecompetences.fr/recherche/rncp/36734/" target="_blank" class="hover:text-primary underline transition-colors">RNCP36734 - Secrétaire médical - France compétences</a></li>
+                    <li><span class="font-bold">2.</span> <a href="https://abreviationsmedicales.ch/" target="_blank" class="hover:text-primary underline transition-colors">Liste des abréviations autorisées - CNCI</a></li>
+                    <li><span class="font-bold">3.</span> <a href="https://www.ch-carcassonne.fr/" target="_blank" class="hover:text-primary underline transition-colors">PRÉFIXES MÉDICAUX - CH Carcassonne</a></li>
+                </ul>
+                <ul class="space-y-3">
+                    <li><span class="font-bold">4.</span> <a href="https://www.msdmanuals.com/fr/accueil/fondamentaux/terminologie-m%C3%A9dicale/comprendre-les-termes-m%C3%A9dicaux" target="_blank" class="hover:text-primary underline transition-colors">Guide de terminologie - Manuels MSD</a></li>
+                    <li><span class="font-bold">5.</span> <a href="http://assurances-sociales.info/" target="_blank" class="hover:text-primary underline transition-colors">Terminologie-medicale-2021 - Assurances-sociales.info</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-auto">
+        <div class="max-w-5xl mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">school</span> Exercices
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                        Application interactive pour l'apprentissage et la validation de compétences sur Microsoft Word et Excel.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Le Projet</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li>
+                            <a href="https://github.com/ProfLambda/exercices" target="_blank"
+                                class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">language</span> Application Principale
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ProfLambda/exercices" target="_blank"
+                                class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">code</span> Code Source (GitHub)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Autres Ressources</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li>
+                            <a href="./guides/" class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">list</span> Guides de validation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./formation.html" class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">workspace_premium</span> Formation 2026
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terminologie.html" class="hover:text-primary transition-colors flex items-center gap-2 active text-primary font-bold">
+                                <span class="material-symbols-outlined text-[18px]">menu_book</span> Terminologie
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400">
+                <p>&copy; 2026 ProfLambda. Fait pour l'apprentissage.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
