@@ -1,0 +1,123 @@
+/* 
+   ProfLambda - Custom Design System 
+   Focus: Excellence, Accessibility, Performance (woff2 local fonts) 
+*/
+
+/* 1. TYPOGRAPHY - SELF-HOSTED */
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('./fonts/baloo-2-v23-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('./fonts/baloo-2-v23-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Comic Neue';
+    src: url('./fonts/comic-neue-v9-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Comic Neue';
+    src: url('./fonts/comic-neue-v9-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary: #4f46e5;
+    --secondary: #818cf8;
+    --cta: #22c55e;
+    --bg-light: #eef2ff;
+    --text-deep: #312e81;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.3);
+}
+
+.dark {
+    --primary: #818cf8;
+    --secondary: #a5b4fc;
+    --bg-light: #0f172a;
+    --text-deep: #f8fafc;
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* 2. BASE RESET & WOW FACTOR */
+body {
+    font-family: 'Comic Neue', system-ui, sans-serif;
+    color: var(--text-deep);
+    background-color: var(--bg-light);
+    transition: background-color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo 2', cursive;
+    line-height: 1.2;
+}
+
+/* Glassmorphism Optimization */
+header {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid var(--glass-border) !important;
+}
+
+/* 3. COMPONENT OVERRIDES */
+.exercise-card, .bg-white, .dark .bg-slate-900 {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    border-radius: 1.5rem !important;
+}
+
+.exercise-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.btn-primary, .bg-primary {
+    background-color: var(--primary) !important;
+    border-radius: 1rem !important;
+    transition: filter 0.2s ease, transform 0.1s active;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+}
+
+/* Animations using GSAP (classes to trigger) */
+.animate-entrance {
+    will-change: transform, opacity;
+}
+
+/* Accessibility: Focus visible */
+:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 2px;
+}
+
+/* 4. PERFORMANCE & MOBILE */
+@media (max-width: 768px) {
+    .max-w-5xl { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+
+/* Tooltip/Aria Helper */
+[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 100;
+}

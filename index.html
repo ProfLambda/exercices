@@ -4,9 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Exercices Excel et Word</title>
-    <script type="module" crossorigin src="/exercices/assets/main-hJAwZkzn.js"></script>
-    <link rel="stylesheet" crossorigin href="/exercices/assets/main-BfUxkiNf.css">
+    <title>ProfLambda - Exercices Excel et Word</title>
+    <!-- Sécurité & SEO -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://*.github.io; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+    
+    <!-- PWA & Mobile -->
+    <link rel="apple-touch-icon" href="./assets/icon-192.png">
+    <link rel="icon" type="image/png" href="./assets/icon-192.png">
+
+    <script defer src="./assets/gsap.min.js"></script>
+    <script defer src="./assets/main.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BfUxkiNf.css">
+    <link rel="stylesheet" href="./assets/custom-design.css">
 </head>
 
 <body id="home-page"
@@ -18,12 +31,12 @@
         <div class="max-w-5xl mx-auto flex items-center justify-between p-4 h-16">
             <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-primary text-3xl">school</span>
-                <h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Exercices Excel et Word</h2>
+                <span class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">ProfLambda</span>
             </div>
             <nav class="hidden md:flex items-center gap-8">
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="./">Exercices</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="./exercices/guides/">Guides de
-                    validation</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors active" href="./">Exercices</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="./guides/">Guides de validation</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="./formation.html">Formation 2026</a>
             </nav>
             <div class="flex items-center gap-4">
                 <button id="theme-toggle"
@@ -49,7 +62,7 @@
                     <span class="material-symbols-outlined">monitoring</span>
                     Progression globale : <span id="global-progress">0%</span>
                 </div>
-                <a href="/exercices/guides/"
+                <a href="./guides/"
                     class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 hover:bg-green-200 dark:hover:bg-green-900/50 px-4 py-2 rounded-lg font-bold flex items-center gap-2 transition-colors">
                     <span class="material-symbols-outlined">checklist</span>
                     Listes de validation
@@ -124,16 +137,13 @@
                     <h4 class="font-bold text-slate-900 dark:text-white mb-4">Autres Ressources</h4>
                     <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
                         <li>
-                            <a href="/exercices/guides/"
-                                class="hover:text-primary transition-colors flex items-center gap-2">
+                            <a href="./guides/" class="hover:text-primary transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined text-[18px]">list</span> Guides de validation
                             </a>
                         </li>
                         <li>
-                            <a href="https://patobeur.github.io/list2validation/excel_1.html" target="_blank"
-                                class="hover:text-primary transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-[18px]">open_in_new</span> Exercice Excel
-                                alternatif
+                            <a href="./formation.html" class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">workspace_premium</span> Formation 2026
                             </a>
                         </li>
                     </ul>

@@ -1,415 +1,252 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="light">
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>_Tableau de Bord - Guides Microsoft Office</title>
-	<!-- Styles de l'application -->
-	<style>
-		body {
-			font-family: system-ui, -apple-system, "Segoe UI", Roboto,
-				"Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
-				sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-				"Segoe UI Symbol", "Noto Color Emoji";
-		}
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ProfLambda - Guides Microsoft Office</title>
+    
+    <!-- Sécurité & SEO -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://*.github.io; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+    
+    <!-- PWA & Mobile -->
+    <link rel="apple-touch-icon" href="../assets/icon-192.png">
+    <link rel="icon" type="image/png" href="../assets/icon-192.png">
 
-		.progress-ring {
-			transform: rotate(-90deg);
-		}
-
-		.progress-ring-circle {
-			transition: stroke-dashoffset 0.5s ease;
-		}
-
-		@keyframes fadeIn {
-			from {
-				opacity: 0;
-				transform: translateY(20px);
-			}
-
-			to {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-
-		.fade-in {
-			animation: fadeIn 0.6s ease forwards;
-		}
-
-		/* Navigation dropdown */
-		.dropdown:hover .dropdown-menu {
-			opacity: 1;
-			visibility: visible;
-			transform: translateY(0);
-		}
-
-		.dropdown-menu {
-			opacity: 0;
-			visibility: hidden;
-			transform: translateY(-10px);
-			transition: all 0.3s ease;
-		}
-	</style>
-  <script type="module" crossorigin src="/exercices/assets/main-hJAwZkzn.js"></script>
-  <link rel="stylesheet" crossorigin href="/exercices/assets/main-BfUxkiNf.css">
+    <!-- CSS/JS Bundle -->
+    <script defer src="../assets/gsap.min.js"></script>
+    <script defer src="../assets/main.js"></script>
+    <script defer src="../assets/guides.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/main-BfUxkiNf.css">
+    <link rel="stylesheet" href="../assets/custom-design.css">
 </head>
+<body class="bg-gray-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col transition-colors">
 
-<body
-	class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-slate-900 dark:to-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors">
-	<!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto flex items-center justify-between p-4 h-16">
+            <div class="flex items-center gap-2">
+                <a href="../" class="text-primary hover:bg-primary/10 flex items-center justify-center p-2 rounded-lg transition-colors mr-2">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </a>
+                <span class="material-symbols-outlined text-primary text-3xl hidden sm:block">school</span>
+                <span class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">ProfLambda</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="../">Exercices</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors active" href="./">Guides de validation</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="../formation.html">Formation 2026</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="p-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
+                    <span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-	<!-- Top Navigation -->
-	<!-- Top Navigation -->
-	<header
-		class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-		<div class="max-w-5xl mx-auto flex items-center justify-between p-4 h-16">
-			<div class="flex items-center gap-2">
-				<a href="/"
-					class="text-primary hover:bg-primary/10 flex items-center justify-center p-2 rounded-lg transition-colors mr-2">
-					<span class="material-symbols-outlined">arrow_back</span>
-				</a>
-				<span class="material-symbols-outlined text-primary text-3xl hidden sm:block">school</span>
-				<h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Exercices Excel et Word</h2>
-			</div>
-			<nav class="hidden md:flex items-center gap-8">
-				<a class="text-sm font-medium hover:text-primary transition-colors" href="../">Exercices</a>
-				<a class="text-sm font-medium hover:text-primary transition-colors" href="./">Guides de
-					validation</a>
-			</nav>
-			<div class="flex items-center gap-4">
-				<button id="theme-toggle"
-					class="p-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
-					<span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
-				</button>
-			</div>
-		</div>
-	</header>
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12 animate-entrance">
+            <h1 class="text-4xl font-black text-slate-900 dark:text-white mb-2">📚 Guides Microsoft Office</h1>
+            <p class="text-slate-600 dark:text-slate-300">Suivez votre progression dans la maîtrise d'Excel, Word et PowerPoint</p>
+        </div>
 
-	<!-- Main Content -->
-	<main class="container mx-auto px-6 py-12">
-		<!-- Header Section -->
-		<div class="text-center mb-12 fade-in">
-			<h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-2">
-				📚 Guides Microsoft Office
-			</h1>
-			<p class="text-gray-600 dark:text-gray-300">
-				Suivez votre progression dans la maîtrise d'Excel, Word et PowerPoint
-			</p>
-		</div>
+        <section class="mb-12 animate-entrance">
+            <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-xl p-8 border-t-4 border-primary">
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center">
+                    <span class="material-symbols-outlined text-primary text-3xl mr-3">dashboard</span> Vue d'Ensemble
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-indigo-50 dark:bg-indigo-950/20 p-6 rounded-2xl border border-indigo-100 dark:border-indigo-900/50">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-indigo-600 dark:text-indigo-400 font-black mb-1 uppercase tracking-widest">Total Compétences</p>
+                                <p class="text-3xl font-black text-indigo-900 dark:text-indigo-100" id="total-skills">60</p>
+                            </div>
+                            <div class="bg-indigo-200 dark:bg-indigo-800/50 rounded-full p-3">
+                                <span class="material-symbols-outlined text-indigo-600 dark:text-indigo-300 text-3xl">menu_book</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 dark:bg-green-950/20 p-6 rounded-2xl border border-green-100 dark:border-green-900/50">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-green-600 dark:text-green-400 font-black mb-1 uppercase tracking-widest">Compétences Acquises</p>
+                                <p class="text-3xl font-black text-green-900 dark:text-green-100" id="acquired-skills">0</p>
+                            </div>
+                            <div class="bg-green-200 dark:bg-green-800/50 rounded-full p-3">
+                                <span class="material-symbols-outlined text-green-600 dark:text-green-300 text-3xl">verified</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-purple-50 dark:bg-purple-950/20 p-6 rounded-2xl border border-purple-100 dark:border-purple-900/50">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-purple-600 dark:text-purple-400 font-black mb-1 uppercase tracking-widest">Progression Globale</p>
+                                <p class="text-3xl font-black text-purple-900 dark:text-purple-100" id="global-progress">0%</p>
+                            </div>
+                            <div class="bg-purple-200 dark:bg-purple-800/50 rounded-full p-3">
+                                <span class="material-symbols-outlined text-purple-600 dark:text-purple-300 text-3xl">trending_up</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	<!-- Statistiques Globales -->
-	<section class="mb-12 fade-in">
-		<div class="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-indigo-500">
-			<h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-3 text-indigo-600" fill="none"
-					viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-						d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-				</svg>
-				Vue d'Ensemble
-			</h2>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-				<!-- Total Compétences -->
-				<div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl border border-indigo-200">
-					<div class="flex items-center justify-between">
-						<div>
-							<p class="text-sm text-indigo-600 font-semibold mb-1">
-								Total Compétences
-							</p>
-							<p class="text-3xl font-bold text-indigo-900" id="total-skills">
-								60
-							</p>
-						</div>
-						<div class="bg-indigo-200 rounded-full p-3 bg-opacity-50">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none"
-								viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-							</svg>
-						</div>
-					</div>
-				</div>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Excel -->
+            <div class="animate-entrance">
+                <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl border border-slate-100 dark:border-slate-800">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-black text-white">📗 Excel</h3>
+                            <div class="relative w-16 h-16">
+                                <svg class="progress-ring w-16 h-16">
+                                    <circle class="text-green-200/30" stroke-width="4" stroke="currentColor" fill="transparent" r="28" cx="32" cy="32" />
+                                    <circle class="progress-ring-circle text-white" stroke-width="4" stroke-dasharray="175.93" stroke-dashoffset="175.93" stroke-linecap="round" stroke="currentColor" fill="transparent" r="28" cx="32" cy="32" id="excel-progress-circle" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-white text-xs font-black" id="excel-progress-text">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-green-50 text-xs font-bold opacity-80 uppercase tracking-tighter">Top 20 des Fonctions</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <div class="flex justify-between text-xs font-black mb-2">
+                                <span class="text-slate-400 uppercase">Progression</span>
+                                <span class="text-green-600 dark:text-green-400" id="excel-count">0/20</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden">
+                                <div class="bg-green-500 h-3 rounded-full transition-all duration-1000" id="excel-progress-bar"></div>
+                            </div>
+                        </div>
+                        <a href="excel_1.html" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-4 rounded-2xl font-black transition-all shadow-lg shadow-green-600/20 active:scale-95">Ouvrir le Guide →</a>
+                    </div>
+                </div>
+            </div>
 
-				<!-- Compétences Acquises -->
-				<div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border border-green-200">
-					<div class="flex items-center justify-between">
-						<div>
-							<p class="text-sm text-green-600 font-semibold mb-1">
-								Compétences Acquises
-							</p>
-							<p class="text-3xl font-bold text-green-900" id="acquired-skills">
-								0
-							</p>
-						</div>
-						<div class="bg-green-200 rounded-full p-3 bg-opacity-50">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none"
-								viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-							</svg>
-						</div>
-					</div>
-				</div>
+            <!-- Word -->
+            <div class="animate-entrance">
+                <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl border border-slate-100 dark:border-slate-800">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-black text-white">📘 Word</h3>
+                            <div class="relative w-16 h-16">
+                                <svg class="progress-ring w-16 h-16">
+                                    <circle class="text-blue-200/30" stroke-width="4" stroke="currentColor" fill="transparent" r="28" cx="32" cy="32" />
+                                    <circle class="progress-ring-circle text-white" stroke-width="4" stroke-dasharray="175.93" stroke-dashoffset="175.93" stroke-linecap="round" stroke="currentColor" fill="transparent" r="28" cx="32" cy="32" id="word-progress-circle" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-white text-xs font-black" id="word-progress-text">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-blue-50 text-xs font-bold opacity-80 uppercase tracking-tighter">Top 20 des Fonctions</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <div class="flex justify-between text-xs font-black mb-2">
+                                <span class="text-slate-400 uppercase">Progression</span>
+                                <span class="text-blue-600 dark:text-blue-400" id="word-count">0/20</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden">
+                                <div class="bg-blue-500 h-3 rounded-full transition-all duration-1000" id="word-progress-bar"></div>
+                            </div>
+                        </div>
+                        <a href="word_1.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-4 rounded-2xl font-black transition-all shadow-lg shadow-blue-600/20 active:scale-95">Ouvrir le Guide →</a>
+                    </div>
+                </div>
+            </div>
 
-				<!-- Progression Globale -->
-				<div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border border-purple-200">
-					<div class="flex items-center justify-between">
-						<div>
-							<p class="text-sm text-purple-600 font-semibold mb-1">
-								Progression Globale
-							</p>
-							<p class="text-3xl font-bold text-purple-900" id="global-progress">
-								0%
-							</p>
-						</div>
-						<div class="bg-purple-200 rounded-full p-3 bg-opacity-50">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
-								viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-							</svg>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <!-- PowerPoint -->
+            <div class="animate-entrance">
+                <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl border border-slate-100 dark:border-slate-800">
+                    <div class="bg-gradient-to-br from-orange-500 to-orange-600 p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-black text-white">📙 PowerPoint</h3>
+                            <div class="relative w-16 h-16">
+                                <svg class="progress-ring w-16 h-16">
+                                    <circle class="text-orange-200/30" stroke-width="4" stroke="currentColor" fill="transparent" r="28" cx="32" cy="32" />
+                                    <circle class="progress-ring-circle text-white" stroke-width="4" stroke-dasharray="175.93" stroke-dashoffset="175.93" stroke-linecap="round" stroke="currentColor" fill="transparent" r="28" cx="32" cy="32" id="powerpoint-progress-circle" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-white text-xs font-black" id="powerpoint-progress-text">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-orange-50 text-xs font-bold opacity-80 uppercase tracking-tighter">Top 20 des Fonctions</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <div class="flex justify-between text-xs font-black mb-2">
+                                <span class="text-slate-400 uppercase">Progression</span>
+                                <span class="text-orange-600 dark:text-orange-400" id="powerpoint-count">0/20</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden">
+                                <div class="bg-orange-500 h-3 rounded-full transition-all duration-1000" id="powerpoint-progress-bar"></div>
+                            </div>
+                        </div>
+                        <a href="powerpoint_1.html" class="block w-full bg-orange-600 hover:bg-orange-700 text-white text-center py-4 rounded-2xl font-black transition-all shadow-lg shadow-orange-600/20 active:scale-95">Ouvrir le Guide →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-	<!-- Cartes des Guides -->
-	<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
-		<!-- Carte Excel -->
-		<div class="fade-in" style="animation-delay: 0.1s">
-			<div
-				class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl border-t-4 border-green-500">
-				<div class="bg-gradient-to-br from-green-500 to-green-600 p-6">
-					<div class="flex items-center justify-between mb-4">
-						<h3 class="text-2xl font-bold text-white">
-							📗 Excel
-						</h3>
-						<div class="relative w-16 h-16">
-							<svg class="progress-ring w-16 h-16">
-								<circle class="text-green-200" stroke-width="4" stroke="currentColor" fill="transparent"
-									r="28" cx="32" cy="32" />
-								<circle class="progress-ring-circle text-white" stroke-width="4"
-									stroke-dasharray="175.93" stroke-dashoffset="175.93" stroke-linecap="round"
-									stroke="currentColor" fill="transparent" r="28" cx="32" cy="32"
-									id="excel-progress-circle" />
-							</svg>
-							<div class="absolute inset-0 flex items-center justify-center">
-								<span class="text-white text-sm font-bold" id="excel-progress-text">0%</span>
-							</div>
-						</div>
-					</div>
-					<p class="text-green-50 text-sm">
-						Top 20 des Fonctions Excel
-					</p>
-				</div>
-				<div class="p-6">
-					<div class="mb-4">
-						<div class="flex justify-between text-sm mb-2">
-							<span class="text-gray-600">Progression</span>
-							<span class="font-semibold text-green-700" id="excel-count">0/20</span>
-						</div>
-						<div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-							<div class="bg-gradient-to-r from-green-500 to-green-600 h-3 rounded-full transition-all duration-500"
-								style="width: 0%" id="excel-progress-bar"></div>
-						</div>
-					</div>
-					<a href="excel_1.html"
-						class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg">
-						Ouvrir le Guide Excel →
-					</a>
-				</div>
-			</div>
-		</div>
+    <footer class="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-auto">
+        <div class="max-w-5xl mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">school</span> Exercices
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                        Application interactive pour l'apprentissage et la validation de compétences sur Microsoft Word et Excel.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Le Projet</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li>
+                            <a href="../" class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">language</span> Application Principale
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ProfLambda/exercices" target="_blank" class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">code</span> Code Source (GitHub)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Autres Ressources</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li>
+                            <a href="./" class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">list</span> Guides de validation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../formation.html" class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">workspace_premium</span> Formation 2026
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400">
+                <p>&copy; 2026 ProfLambda. Fait pour l'apprentissage.</p>
+            </div>
+        </div>
+    </footer>
 
-		<!-- Carte Word -->
-		<div class="fade-in" style="animation-delay: 0.2s">
-			<div
-				class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl border-t-4 border-blue-500">
-				<div class="bg-gradient-to-br from-blue-500 to-blue-600 p-6">
-					<div class="flex items-center justify-between mb-4">
-						<h3 class="text-2xl font-bold text-white"> 📘 Word </h3>
-						<div class="relative w-16 h-16">
-							<svg class="progress-ring w-16 h-16">
-								<circle class="text-blue-200" stroke-width="4" stroke="currentColor" fill="transparent"
-									r="28" cx="32" cy="32" />
-								<circle class="progress-ring-circle text-white" stroke-width="4"
-									stroke-dasharray="175.93" stroke-dashoffset="175.93" stroke-linecap="round"
-									stroke="currentColor" fill="transparent" r="28" cx="32" cy="32"
-									id="word-progress-circle" />
-							</svg>
-							<div class="absolute inset-0 flex items-center justify-center">
-								<span class="text-white text-sm font-bold" id="word-progress-text">0%</span>
-							</div>
-						</div>
-					</div>
-					<p class="text-blue-50 text-sm">
-						Top 20 des Fonctionnalités Word
-					</p>
-				</div>
-				<div class="p-6">
-					<div class="mb-4">
-						<div class="flex justify-between text-sm mb-2">
-							<span class="text-gray-600">Progression</span>
-							<span class="font-semibold text-blue-700" id="word-count">0/20</span>
-						</div>
-						<div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-							<div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-500"
-								style="width: 0%" id="word-progress-bar"></div>
-						</div>
-					</div>
-					<a href="word_1.html"
-						class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg">
-						Ouvrir le Guide Word →
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<!-- Carte PowerPoint -->
-		<div class="fade-in" style="animation-delay: 0.3s">
-			<div
-				class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl border-t-4 border-orange-500">
-				<div class="bg-gradient-to-br from-orange-500 to-orange-600 p-6">
-					<div class="flex items-center justify-between mb-4">
-						<h3 class="text-2xl font-bold text-white">
-							📙 PowerPoint
-						</h3>
-						<div class="relative w-16 h-16">
-							<svg class="progress-ring w-16 h-16">
-								<circle class="text-orange-200" stroke-width="4" stroke="currentColor"
-									fill="transparent" r="28" cx="32" cy="32" />
-								<circle class="progress-ring-circle text-white" stroke-width="4"
-									stroke-dasharray="175.93" stroke-dashoffset="175.93" stroke-linecap="round"
-									stroke="currentColor" fill="transparent" r="28" cx="32" cy="32"
-									id="powerpoint-progress-circle" />
-							</svg>
-							<div class="absolute inset-0 flex items-center justify-center">
-								<span class="text-white text-sm font-bold" id="powerpoint-progress-text">0%</span>
-							</div>
-						</div>
-					</div>
-					<p class="text-orange-50 text-sm">
-						Top 20 des Fonctionnalités PowerPoint
-					</p>
-				</div>
-				<div class="p-6">
-					<div class="mb-4">
-						<div class="flex justify-between text-sm mb-2">
-							<span class="text-gray-600">Progression</span>
-							<span class="font-semibold text-orange-700" id="powerpoint-count">0/20</span>
-						</div>
-						<div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-							<div class="bg-gradient-to-r from-orange-500 to-orange-600 h-3 rounded-full transition-all duration-500"
-								style="width: 0%" id="powerpoint-progress-bar"></div>
-						</div>
-					</div>
-					<a href="powerpoint_1.html"
-						class="block w-full bg-orange-600 hover:bg-orange-700 text-white text-center py-3 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg">
-						Ouvrir le Guide PowerPoint →
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	</main>
-
-	<!-- Footer -->
-	<footer class="bg-gray-800 text-white py-8 mt-16">
-		<div class="container mx-auto px-6 text-center">
-			<p class="text-sm text-gray-400">
-				&copy; 2025 Guides Microsoft Office. Contenu généré à titre
-				informatif.
-			</p>
-		</div>
-	</footer>
-
-	<!-- Script de récupération des progressions -->
-	<script>
-		window.addEventListener("load", () => {
-			const storageKeys = {
-				excel: "excelMasteryProgress",
-				word: "wordMasteryProgress",
-				powerpoint: "powerpointMasteryProgress",
-			};
-
-			const countAcquiredSkills = (storageKey) => {
-				const rawData = localStorage.getItem(storageKey);
-				const data = JSON.parse(rawData) || {};
-				return Object.values(data).filter(Boolean).length;
-			};
-
-			const updateProgressCircle = (circleId, percentage) => {
-				const circle = document.getElementById(circleId);
-				if (!circle) return;
-				const circumference = 175.93;
-				const offset =
-					circumference - (percentage / 100) * circumference;
-				circle.style.strokeDashoffset = offset;
-			};
-
-			const updateCard = (prefix, count, total = 20) => {
-				const percentage =
-					total > 0 ? Math.round((count / total) * 100) : 0;
-
-				const countEl = document.getElementById(`${prefix}-count`);
-				const textEl = document.getElementById(
-					`${prefix}-progress-text`
-				);
-				const barEl = document.getElementById(`${prefix}-progress-bar`);
-
-				if (countEl) countEl.textContent = `${count}/${total}`;
-				if (textEl) textEl.textContent = `${percentage}%`;
-				if (barEl) barEl.style.width = `${percentage}%`;
-
-				updateProgressCircle(`${prefix}-progress-circle`, percentage);
-			};
-
-			const updateAllData = () => {
-				const excelProgress = countAcquiredSkills(storageKeys.excel);
-				const wordProgress = countAcquiredSkills(storageKeys.word);
-				const powerpointProgress = countAcquiredSkills(
-					storageKeys.powerpoint
-				);
-
-				const totalAcquired =
-					excelProgress + wordProgress + powerpointProgress;
-				const totalSkills = 60;
-				const globalProgressPercent =
-					totalSkills > 0
-						? Math.round((totalAcquired / totalSkills) * 100)
-						: 0;
-
-				const acquiredEl = document.getElementById("acquired-skills");
-				const globalEl = document.getElementById("global-progress");
-
-				if (acquiredEl) acquiredEl.textContent = totalAcquired;
-				if (globalEl) globalEl.textContent = `${globalProgressPercent}%`;
-
-				updateCard("excel", excelProgress);
-				updateCard("word", wordProgress);
-				updateCard("powerpoint", powerpointProgress);
-			};
-
-			updateAllData();
-
-			window.addEventListener("storage", (e) => {
-				if (Object.values(storageKeys).includes(e.key)) {
-					updateAllData();
-				}
-			});
-
-			document.addEventListener("visibilitychange", () => {
-				if (document.visibilityState === "visible") {
-					updateAllData();
-				}
-			});
-		});
-	</script>
 </body>
 
 </html>

@@ -1,0 +1,21 @@
+{
+  "name": "ProfLambda - Exercices Bureautiques",
+  "short_name": "PL Exercices",
+  "description": "Application interactive pour la pratique d'Excel et de Word.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#EEF2FF",
+  "theme_color": "#4F46E5",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

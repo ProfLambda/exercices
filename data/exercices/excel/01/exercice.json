@@ -13,7 +13,7 @@
     ],
     "expectedResult": {
         "description": "Un tableau complété avec les totaux, moyennes et records de la semaine clairement identifiables.",
-        "image": "exercice_1.png"
+        "image": "exercice_1.webp"
     },
     "resources": [
         {

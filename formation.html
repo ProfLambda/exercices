@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Formation 2026 - Secrétaire Médical | ProfLambda</title>
+    <!-- Sécurité & SEO -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://*.github.io; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+
+    <!-- PWA & Mobile -->
+    <link rel="apple-touch-icon" href="./assets/icon-192.png">
+    <link rel="icon" type="image/png" href="./assets/icon-192.png">
+
+    <script defer src="./assets/gsap.min.js"></script>
+    <script defer src="./assets/main.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BfUxkiNf.css">
+    <link rel="stylesheet" href="./assets/custom-design.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+
+    <!-- Top Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto flex items-center justify-between p-4 h-16">
+            <div class="flex items-center gap-2">
+                <a href="./"
+                    class="text-primary hover:bg-primary/10 flex items-center justify-center p-2 rounded-lg transition-colors mr-2">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </a>
+                <span class="material-symbols-outlined text-primary text-3xl hidden sm:block">school</span>
+                <span class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">ProfLambda</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="./">Exercices</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="./guides/">Guides de
+                    validation</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors active text-primary font-bold"
+                    href="./formation.html">Formation 2026</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle"
+                    class="p-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
+                    <span class="material-symbols-outlined" id="theme-toggle-icon">dark_mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-5xl mx-auto w-full px-4 py-12">
+        <!-- Hero Section -->
+        <section class="animate-entrance mb-16 text-center md:text-left">
+            <div
+                class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                RNCP 36734 - Dossier Pédagogique 2026-2027
+            </div>
+            <h1
+                class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6 leading-tight tracking-tighter uppercase">
+                Ingénierie Bureautique & <br>Transformation Digitale
+            </h1>
+            <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl leading-relaxed">
+                Le rôle du secrétaire médical évolue d'un métier de saisie vers un rôle de gestionnaire de flux et pivot
+                de l'identitovigilance. Cette page synthétise les compétences attendues pour le Bachelor.
+            </p>
+        </section>
+
+        <!-- Fondements & Blocs -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            <div class="lg:col-span-2 space-y-8">
+                <section
+                    class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">verified</span>
+                        Niveaux de Compétence Attendus
+                    </h2>
+                    <div class="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-400">
+                        <p>
+                            Le titre Secrétaire Médical <strong>RNCP 36734</strong> incarne la mutation du métier en
+                            structurant les compétences autour de trois blocs majeurs exigeant une maîtrise exhaustive
+                            des outils numériques.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                            <div
+                                class="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all">
+                                <h4 class="font-bold text-slate-900 dark:text-slate-100 text-sm mb-2">BC01 :
+                                    Communication</h4>
+                                <p class="text-xs">Accueil, identitovigilance (INS) et gestion des agendas complexes via
+                                    LGC (Doctolib, Maiia).</p>
+                            </div>
+                            <div
+                                class="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all">
+                                <h4 class="font-bold text-slate-900 dark:text-slate-100 text-sm mb-2">BC02 : Gestion
+                                    Admin</h4>
+                                <p class="text-xs">Finance, facturation (Excel complexes) et responsabilité sociétale
+                                    (RSE).</p>
+                            </div>
+                            <div
+                                class="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all md:col-span-2">
+                                <h4 class="font-bold text-slate-900 dark:text-slate-100 text-sm mb-2">BC03 :
+                                    Spécificités</h4>
+                                <p class="text-xs">Production documentaire (Word Styles) et transcription numérique
+                                    (DPI) via dictaphones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="space-y-6">
+                <div class="bg-primary/5 dark:bg-primary/10 p-8 rounded-2xl border-2 border-primary/20">
+                    <h3 class="font-bold text-lg text-primary mb-4">Supports Vidal</h3>
+                    <p class="text-xs text-slate-500 mb-4">L'apprentissage repose sur une articulation étroite entre
+                        théorie et pratique professionnelle.</p>
+                    <ul class="space-y-3 text-xs font-medium">
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                            Fiches de terminologie</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                            Protocoles d'hygiène</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                            Plateformes e-learning</li>
+                    </ul>
+                    <div class="mt-6 pt-4 border-t border-primary/10">
+                        <a href="https://www.vidal-formation.paris/formations/secretaire-medicale/" target="_blank"
+                            class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-primary hover:opacity-80 transition-opacity">
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            Accéder à Vidal Formation
+                        </a>
+                    </div>
+                </div>
+                <div class="p-6 bg-slate-100 dark:bg-slate-800/50 rounded-2xl">
+                    <h4 class="text-xs font-black uppercase text-slate-400 mb-4">Évaluations</h4>
+                    <div class="space-y-3 text-[11px] font-bold">
+                        <div class="flex justify-between items-center"><span class="text-slate-500">BC01</span> <span
+                                class="text-primary italic">Mise en situation</span></div>
+                        <div class="flex justify-between items-center"><span class="text-slate-500">BC02</span> <span
+                                class="text-primary italic">Cas Pratique Gestion</span></div>
+                        <div class="flex justify-between items-center"><span class="text-slate-500">BC03</span> <span
+                                class="text-primary italic">Exam Écrit / Rapport</span></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Expertise Excel: Analyse FinanciÃ¨re -->
+        <section
+            class="mb-16 bg-white dark:bg-slate-900 p-8 md:p-12 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm transition-all hover:shadow-md">
+            <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-8 tracking-tighter uppercase">
+                Expertise Microsoft Excel : Analyse Financière
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Le secrétaire doit maîtriser les calculs complexes liés à l'Assurance Maladie et à la gestion
+                        des structures de santé. La mécanique du remboursement est fondamentale pour conseiller les
+                        patients.
+                    </p>
+                    <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border-l-4 border-primary">
+                        <h4 class="text-sm font-bold mb-4 uppercase text-slate-900 dark:text-white">Logique de Calcul
+                            (Exemple Spécialiste)</h4>
+                        <ul class="space-y-3 text-xs font-medium text-slate-600 dark:text-slate-400">
+                            <li class="flex justify-between"><span>Part Sécurité Sociale (70% de BRSS) :</span> <span
+                                    class="font-bold text-slate-900 dark:text-white">21 €</span></li>
+                            <li class="flex justify-between italic opacity-60"><span>(30 € x 0,70 = 21 €)</span></li>
+                            <li class="flex justify-between"><span>Plafond Mutuelle (200% de la BRSS) :</span> <span
+                                    class="font-bold text-slate-900 dark:text-white">60 €</span></li>
+                            <li class="flex justify-between"><span>Part Mutuelle (après Déduction SS) :</span> <span
+                                    class="font-bold text-slate-900 dark:text-white">39 €</span></li>
+                            <li
+                                class="flex justify-between font-black pt-2 border-t border-slate-200 dark:border-slate-700">
+                                <span>Remboursement Total :</span> <span class="text-primary">60 €</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-[11px] border-collapse">
+                        <thead>
+                            <tr
+                                class="bg-slate-100 dark:bg-slate-800 text-slate-400 uppercase tracking-widest font-black">
+                                <th class="p-4 rounded-tl-xl border-b border-white/10">Acte</th>
+                                <th class="p-4 border-b border-white/10">Code 2026</th>
+                                <th class="p-4 rounded-tr-xl border-b border-white/10">Application</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-slate-600 dark:text-slate-400">
+                            <tr class="border-b border-slate-50 dark:border-slate-800">
+                                <td class="p-4 font-bold">Avis Consultant</td>
+                                <td class="p-4">APC - 60 €</td>
+                                <td class="p-4">Listes déroulantes</td>
+                            </tr>
+                            <tr class="border-b border-slate-50 dark:border-slate-800">
+                                <td class="p-4 font-bold">Consul. de Référence</td>
+                                <td class="p-4">30 €</td>
+                                <td class="p-4">Ticket modérateur</td>
+                            </tr>
+                            <tr class="border-b border-slate-50 dark:border-slate-800">
+                                <td class="p-4 font-bold">Consul. Longue (>80 ans)</td>
+                                <td class="p-4">60 €</td>
+                                <td class="p-4">Gestion conditions</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold">Unité Acte CCAM</td>
+                                <td class="p-4">0,47 €</td>
+                                <td class="p-4">Multiplication Travail</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- IngÃ©nierie Word & Bug Fix Mockup -->
+        <section class="mb-16">
+            <div class="bg-slate-900 text-white rounded-[2rem] overflow-hidden flex flex-col md:flex-row">
+                <div class="p-8 md:p-12 md:w-3/5 space-y-6">
+                    <h2 class="text-3xl font-black tracking-tighter uppercase italic text-primary">Ingénierie du
+                        Compte-Rendu</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        L'usage des <strong>Styles Word</strong> est impératif pour structurer les documents longs et
+                        permettre une navigation rapide. Chaque document doit respecter l'Identité Nationale de Santé
+                        (INS) du patient.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl">
+                            <h4 class="text-xs font-bold text-white mb-2">CRO / CRH</h4>
+                            <p class="text-[10px] text-slate-500">Standardisation accrue, exérèse, schémas légendés.</p>
+                        </div>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl">
+                            <h4 class="text-xs font-bold text-white mb-2">Dictaphone Num.</h4>
+                            <p class="text-[10px] text-slate-500">Logiciels de reconnaissance et intégration DPI.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bug Fix: Improved Mockup with flexible text container -->
+                <div
+                    class="bg-slate-800 p-8 md:w-2/5 flex flex-col items-center justify-center border-l border-white/5">
+                    <div class="w-full max-w-[200px] space-y-4">
+                        <div class="h-1 w-20 bg-slate-600 rounded"></div>
+                        <div class="space-y-2">
+                            <div class="h-1 w-full bg-slate-700/50 rounded"></div>
+                            <div class="h-1 w-full bg-slate-700/50 rounded"></div>
+                            <div class="h-1 w-5/6 bg-slate-700/50 rounded"></div>
+                        </div>
+                        <div class="pt-6 border-t border-slate-700 flex flex-col items-center gap-3">
+                            <!-- Corrected structure to avoid overlap -->
+                            <div
+                                class="w-full py-4 px-4 bg-primary/20 border border-primary/30 rounded-lg flex flex-col items-center justify-center gap-1 min-h-[60px] text-center">
+                                <span class="text-[10px] font-black uppercase tracking-widest text-primary">Champ
+                                    INS</span>
+                                <span class="text-[10px] font-medium text-primary">Interconnecté</span>
+                            </div>
+                            <div class="h-1 w-1/3 bg-primary/20 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collaboration Digitale & SharePoint -->
+        <section class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-1 space-y-6">
+                    <h2 class="text-2xl font-black tracking-tight text-slate-900 dark:text-white uppercase">
+                        Collaboration Digitale</h2>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        Le secrétaire évolue dans un écosystème collaboratif où le partage d'informations doit être
+                        fluide mais strictement sécurisé. <strong>SharePoint</strong> est le socle de ce nouveau
+                        partage.
+                    </p>
+                    <div
+                        class="p-4 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700">
+                        <h4 class="text-xs font-bold mb-2 flex items-center gap-2 text-slate-900 dark:text-white">
+                            <span class="material-symbols-outlined text-primary text-sm">security</span>
+                            Hébergement HDS
+                        </h4>
+                        <p class="text-[10px] text-slate-500">Sécurisation MSSanté obligatoire pour tout échange de
+                            données patient.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="md:col-span-2 bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col gap-6">
+                    <h3
+                        class="font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-4 uppercase text-xs tracking-widest">
+                        Architecture SharePoint</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 group">
+                                <span
+                                    class="w-6 h-6 rounded bg-primary/10 text-primary text-[10px] flex items-center justify-center font-black transition-colors group-hover:bg-primary group-hover:text-white">1</span>
+                                <span class="text-[11px] font-bold">Espace Patient</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 pl-8">Dossiers administratifs, scans mutuelles,
+                                courriers liaison.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 group">
+                                <span
+                                    class="w-6 h-6 rounded bg-primary/10 text-primary text-[10px] flex items-center justify-center font-black transition-colors group-hover:bg-primary group-hover:text-white">2</span>
+                                <span class="text-[11px] font-bold">Gestion Cabinet</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 pl-8">Factures fournisseurs, maintenance, contrats
+                                assurances.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 group">
+                                <span
+                                    class="w-6 h-6 rounded bg-primary/10 text-primary text-[10px] flex items-center justify-center font-black transition-colors group-hover:bg-primary group-hover:text-white">3</span>
+                                <span class="text-[11px] font-bold">Qualité & Protocoles</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 pl-8">Hygiène, stérilisation, guides HAS, protocoles
+                                sanitaires.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 group">
+                                <span
+                                    class="w-6 h-6 rounded bg-primary/10 text-primary text-[10px] flex items-center justify-center font-black transition-colors group-hover:bg-primary group-hover:text-white">4</span>
+                                <span class="text-[11px] font-bold">Ressources Humaines</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 pl-8">Plannings équipe, suivi des formations, médecine
+                                du travail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bibliographie & Ressources ClÃ©s -->
+        <section
+            class="bg-slate-50 dark:bg-slate-900/50 p-8 md:p-12 rounded-2xl border border-slate-200 dark:border-slate-800">
+            <h2 class="text-sm font-black text-slate-400 uppercase tracking-widest mb-10 text-center md:text-left">Index
+                des Ressources & Sources Scientifiques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-6">
+                <div class="space-y-4">
+                    <h4 class="text-[11px] font-black text-primary uppercase">Certification & RNCP</h4>
+                    <ul class="space-y-3 text-[11px]">
+                        <li><a href="https://www.francecompetences.fr/recherche/rncp/36734/" target="_blank"
+                                class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2">—
+                                RNCP36734 France Compétences</a></li>
+                        <li><a href="https://www.vidal-formation.paris" target="_blank"
+                                class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2">—
+                                Vidal Formation - Dossier Certifié 2026</a></li>
+                        <li class="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-400 italic font-medium">—
+                            Rapport de stage et Dossier Professionnel</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-[11px] font-black text-primary uppercase">Outils & Bureau</h4>
+                    <ul class="space-y-3 text-[11px]">
+                        <li><a href="https://info.doctolib.fr/blog/dossier-patient-informatise/" target="_blank"
+                                class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2">—
+                                Doctolib Pro - DPI & LGC</a></li>
+                        <li><a href="https://medistory.com" target="_blank"
+                                class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2">—
+                                Medistory - Application MSP</a></li>
+                        <li><a href="https://www.hellowork.com/fr-fr/medias/ecrire-mails-chatgpt.html" target="_blank"
+                                class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2">—
+                                ChatGPT - Modèles de prompts Mails Pro</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-[11px] font-black text-primary uppercase">Sécurité & Santé</h4>
+                    <ul class="space-y-3 text-[11px]">
+                        <li><a href="https://messervices.cyber.gouv.fr/services/secnum-academie.html" target="_blank"
+                                class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2">—
+                                SecNumAcadémie - MOOC ANSSI</a></li>
+                        <li><a href="https://www.urpsmlgrandest.fr/data/doc-358/20231025/14918_1.pdf" target="_blank"
+                                class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2">—
+                                Écoresponsabilité en cabinet (RSE)</a></li>
+                        <li><a href="https://www.meilleurtaux.com/comparateur-assurance/mutuelle-sante/remboursement-mutuelle/"
+                                target="_blank"
+                                class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2">—
+                                Calcul Remboursement Mutuelle</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[10px] text-slate-400 italic">Dossier pédagogique exhaustif - Récupéré du PDF FSAN
+                    2026-2027.</p>
+                <div class="flex gap-4">
+                    <span class="px-3 py-1 bg-primary text-white text-[9px] font-black rounded uppercase">Source PDF
+                        FSAN</span>
+                    <span
+                        class="px-3 py-1 bg-slate-200 dark:bg-slate-800 text-slate-500 text-[9px] font-black rounded uppercase">UTF-8
+                        Clean</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-auto">
+        <div class="max-w-5xl mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">school</span> Exercices
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                        Application interactive pour l'apprentissage et la validation de compétences sur Microsoft Word
+                        et Excel.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Le Projet</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li>
+                            <a href="https://github.com/ProfLambda/exercices" target="_blank"
+                                class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">language</span> Application
+                                Principale
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ProfLambda/exercices" target="_blank"
+                                class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">code</span> Code Source (GitHub)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Autres Ressources</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li>
+                            <a href="./guides/" class="hover:text-primary transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">list</span> Guides de validation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./formation.html"
+                                class="hover:text-primary transition-colors flex items-center gap-2 active text-primary font-bold">
+                                <span class="material-symbols-outlined text-[18px]">workspace_premium</span> Formation
+                                2026
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400">
+                <p>&copy; 2026 ProfLambda. Fait pour l'apprentissage.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
