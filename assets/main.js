@@ -13,19 +13,29 @@ const escapeHTML = (str) => {
 /**
  * Tagged template for safe HTML injection (Rule n°10)
  */
+class SafeString {
+    constructor(str) { this.str = str; }
+    toString() { return this.str; }
+}
+
 const html = (strings, ...values) => {
-    return strings.reduce((acc, str, i) => {
+    const result = strings.reduce((acc, str, i) => {
         const val = values[i];
         let escapedVal = '';
-        if (Array.isArray(val)) {
-            escapedVal = val.join(''); // Assume sub-templates are already safe
+        
+        if (val instanceof SafeString) {
+            escapedVal = val.toString();
+        } else if (Array.isArray(val)) {
+            escapedVal = val.map(v => v instanceof SafeString ? v.toString() : escapeHTML(String(v))).join('');
         } else if (val === undefined || val === null) {
             escapedVal = '';
-        } else {
+        } else if (i < values.length) {
             escapedVal = escapeHTML(String(val));
         }
+        
         return acc + str + escapedVal;
     }, '');
+    return new SafeString(result);
 };
 
 const STORAGE_KEY = "exercices_progress";
