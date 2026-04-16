@@ -1,16 +1,99 @@
-RAPPORT D'ACTIVITÉ ANNUEL 2026 - SERVICE DES URGENCES
+RAPPORT D'ACTIVITÉ ANNUEL 2026 - CENTRE HOSPITALIER UNIVERSITAIRE
+SERVICE DES URGENCES ET DE L'ADMISSION
+
+PRÉAMBULE
+Le présent rapport d'activité annuel a pour objet de synthétiser les performances, les évolutions structurelles et les défis rencontrés par le service des urgences et le pôle admission au cours de l'exercice 2026. Ce document sert de base à la planification stratégique pour l'année 2027 et à l'évaluation de la qualité des soins prodigués au sein de notre établissement.
 
 INTRODUCTION
-Ce rapport présente le bilan de l'activité du service des urgences pour l'année 2026. L'objectif est d'analyser les flux de patients, les temps d'attente moyens et l'optimisation des parcours de soins.
+L'année 2026 a été marquée par une mutation profonde de notre système d'information hospitalier (SIH) et une augmentation constante de la pression démographique sur notre bassin de santé. Le service des urgences, pivot central de l'accueil non programmé, a dû s'adapter à de nouvelles normes de sécurité sanitaire tout en engageant un vaste chantier de dématérialisation des dossiers patients.
 
-ANALYSE DES FLUX
-Le service a accueilli 45 000 patients cette année, soit une augmentation de 5% par rapport à l'année précédente.
-Les mois les plus denses ont été janvier et février (épidémies hivernales).
-La répartition par âge montre une forte proportion de patients de moins de 10 ans et de plus de 75 ans.
+Ce rapport s'articule autour de trois axes majeurs : l'analyse quantitative des flux, l'évaluation de la qualité de la prise en charge et les perspectives d'évolution pour l'exercice à venir.
 
-TEMPS DE PRISE EN CHARGE
-Le temps d'attente moyen avant le premier contact médical est de 45 minutes.
-Des efforts importants ont été réalisés pour réduire ce temps, notamment par la mise en place d'un infirmier d'accueil et d'orientation (IAO) supplémentaire sur les tranches horaires 10h-22h.
+I. ANALYSE ET ÉVOLUTION DES FLUX DE PATIENTS
 
-CONCLUSIONS ET PERSPECTIVES
-L'année 2026 montre une activité soutenue. Pour l'année prochaine, il est prévu d'agrandir la zone de tri et de fluidifier l'accès à l'imagerie médicale.
+1.1 Données Quantitatives Globales
+Au cours de l'année 2026, notre service a totalisé 58 450 passages aux urgences, contre 52 300 en 2025, soit une progression nette de 11,7 %. Cette croissance, supérieure aux prévisions initiales de 4 %, s'explique notamment par la fermeture de structures de proximité concurrentes et par le vieillissement de la population locale.
+
+La répartition mensuelle de l'activité montre des pics de fréquentation critiques lors de la période hivernale (janvier-février) avec une moyenne de 190 passages par jour, contre une moyenne annuelle de 160 passages. Les périodes de canicule en juillet ont également généré une surcharge d'activité liée à la pathologie gériatrique et à la déshydratation.
+
+1.2 Typologie de la Patientèle
+La segmentation par tranches d'âge révèle des tendances significatives :
+- Patients de moins de 18 ans : 15 % de l'activité (Urgences pédiatriques)
+- Patients de 18 à 65 ans : 45 % de l'activité
+- Patients de plus de 65 ans : 40 % de l'activité
+
+Il est à noter que la catégorie des plus de 75 ans représente à elle seule 28 % des admissions, souvent pour des prises en charge complexes nécessitant une hospitalisation en aval. Cette situation accentue la tension sur la disponibilité des lits d'hospitalisation complète.
+
+1.3 Modes d'Arrivée
+- Arrivée par ses propres moyens : 55 %
+- Transport sanitaire (Ambulance/VSAV) : 32 %
+- SMUR : 8 %
+- Forces de l'ordre : 5 %
+
+L'augmentation des arrivées par transport sanitaire (+15 %) souligne la fragilisation des réseaux de médecine de ville et le recours accru aux secours publics pour des situations non urgentes.
+
+II. QUALITÉ ET DÉLAIS DE PRISE EN CHARGE
+
+2.1 Temps d'Attente et de Passage
+La fluidité du parcours patient demeure notre priorité absolue. En 2026, le temps d'attente moyen avant le premier contact médical a été réduit à 42 minutes, contre 48 minutes en 2025. Cette amélioration est le résultat direct du renforcement de l'équipe d'Infirmiers d'Accueil et d'Orientation (IAO).
+
+Cependant, la durée moyenne de séjour aux urgences (DMSU) reste élevée, se situant à 5 heures et 15 minutes. Ce délai s'explique principalement par les délais d'obtention des résultats de biologie (moyenne de 90 minutes) et d'imagerie médicale (moyenne de 110 minutes).
+
+2.2 Sécurité Patient et Identitovigilance
+La mise en œuvre de l'Identité Nationale de Santé (INS) a été finalisée au premier semestre 2026. Désormais, 98 % des dossiers patients sont qualifiés avec l'INS, réduisant drastiquement le risque d'erreur d'identification. Des audits réguliers montrent une conformité exemplaire du personnel administratif sur les procédures de vérification de l'identité à l'entrée.
+
+2.3 Satisfaction des Usagers
+Les questionnaires de sortie, désormais numérisés via un QR code, indiquent un taux de satisfaction globale de 82 %. Les principaux points d'amélioration identifiés par les patients concernent le confort en salle d'attente et l'information donnée sur les délais d'attente réels pendant la prise en charge.
+
+III. MODERNISATION ET SYSTÈMES D’INFORMATION
+
+3.1 Le passage au Zéro Papier
+L'année 2026 a vu la disparition totale du dossier papier au sein du service de médecine d'urgence. L'intégration de la reconnaissance vocale pour la rédaction des comptes-rendus opératoires (CRO) et des comptes-rendus d'hospitalisation (CRH) a permis un gain de temps estimé à 45 minutes par jour et par praticien.
+
+3.2 Interopérabilité et DMP
+Le flux d'informations vers le Dossier Médical Partagé (DMP) est désormais automatisé. Tout compte-rendu validé est envoyé en temps réel sur l'espace « Mon Espace Santé » du patient, garantissant la continuité des soins avec les médecins traitants.
+
+3.3 Cybersécurité
+Suite aux cyberattaques ayant touché plusieurs établissements de la région, le CHU a investi 1,2 million d'euros dans la sécurisation de ses serveurs et dans la formation du personnel. Deux exercices de « mode dégradé » (panne informatique totale simulée) ont été réalisés avec succès, garantissant que le service peut continuer à fonctionner sur support papier en cas de force majeure majeure.
+
+IV. GESTION DES RESSOURCES HUMAINES ET FORMATION
+
+4.1 Effectifs et Recrutement
+Le service compte actuellement 24 médecins urgentistes (équivalent temps plein), 62 infirmiers et 45 aides-soignants. Le taux d'absentéisme a baissé de 2 % grâce à une politique active de bien-être au travail et à l'aménagement des cycles horaires (passage en 12h pour une partie volontaire des équipes).
+
+4.2 Plan de Formation 2026
+Plusieurs thématiques ont été privilégiées cette année :
+- Gestion de l'agressivité et des situations conflictuelles (85 % du personnel formé).
+- Utilisation experte du logiciel de DPI (Dossier Patient Informatisé).
+- Prise en charge de la douleur aiguë chez l'enfant et le sujet âgé.
+- Perfectionnement en anglais médical pour l'accueil des patients étrangers.
+
+V. BILAN FINANCIER ET INVESTISSEMENTS
+
+5.1 Budget d'Exploitation
+Le budget alloué au service pour l'exercice 2026 s'est élevé à 8,5 millions d'euros. Les dépenses ont été maîtrisées, malgré l'inflation sur les dispositifs médicaux à usage unique.
+
+5.2 Investissements Réalisés
+- Acquisition de 3 nouveaux échographes portatifs pour le déchocage.
+- Renouvellement de la flotte de brancards connectés.
+- Aménagement d'un salon de sortie pour libérer plus rapidement les boxes d'examen.
+
+VI. PERSPECTIVES POUR L'ANNÉE 2027
+
+Pour l'année à venir, le service se fixe trois objectifs prioritaires :
+
+1. Ouverture d'une Unité d'Hospitalisation de Courte Durée (UHCD) supplémentaire de 6 lits pour désengorger les couloirs lors des pics d'activité.
+2. Développement de la télémédecine : Mise en place d'une régulation par télé-expertise pour les EHPAD afin de limiter les transferts inutiles vers les urgences.
+3. Optimisation du parcours AVC : Réduction du délai « Door-to-needle » à moins de 45 minutes en collaboration étroite avec le service de neurologie.
+
+CONCLUSION
+En conclusion, l'année 2026 a été une année charnière pour notre service. Malgré une activité en forte hausse, la qualité de la prise en charge et la sécurité des soins ont été préservées grâce à l'engagement sans faille de l'ensemble des équipes. La modernisation technique et administrative engagée nous permet d'aborder 2027 avec sérénité et professionnalisme, toujours au service de la santé publique de notre territoire.
+
+Fait à ProfLambda, le 15 janvier 2027.
+La Direction de l'Établissement
+Le Chef de Service des Urgences
+Le Responsable du Pôle Administratif
+
+ANNEXE 1 : TABLEAU RÉCAPITULATIF DES PASSAGES PAR MOIS (2025-2026)
+ANNEXE 2 : INDICATEURS DE QUALITÉ IQSS
+ANNEXE 3 : ORGANIGRAMME DU SERVICE
